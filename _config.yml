@@ -8,9 +8,9 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Bronson (Moonseong) Jeong (정문성)"
+title                    : "Bronson (Moonseong) Jeong"
 title_separator          : "-"
-name                     : &name "Bronson Jeong (정문성)"
+name                     : &name "Bronson Jeong"
 description              : &description "PhD Student, Department of Computer Science, UCLA"
 url                      : https://bronsonj98.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -22,7 +22,7 @@ repository               : "bronsonj98/bronsonj98.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Bronson (Moonseong) Jeong (정문성)"
+  name             : "Bronson (Moonseong) Jeong"
   pronouns         : # example: "she/her"  
   bio              : "PhD Student, Department of Computer Science, UCLA"
   location         : "Los Angeles, CA"
