@@ -15,7 +15,7 @@ During my undergraduate years, I had the opportunity to collaborate with Profess
 
 Current research topics:
 * Scalable summary statistics-based population parameter inference in biobanks
-* Coalescent theoretic limit of local ancestry inference (LAI) with references
-* Understanding Opioid prescription patterns
+* Coalescent theoretic limit of reference-based local ancestry inference (LAI)
+* Understanding opioid prescription patterns
 * Deep-learning based latent embeddings of high-dimensional phenotypes in biobanks
 
