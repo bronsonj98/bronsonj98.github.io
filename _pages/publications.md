@@ -5,6 +5,15 @@ permalink: /publications/
 author_profile: true
 ---
 
+<style>
+.authors {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 5px;
+}
+</style>
+
+
 {% if site.author.googlescholar %}
   <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
 {% endif %}
