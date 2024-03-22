@@ -32,9 +32,9 @@ author_profile: true
         <img src="publication-image.jpg" alt="Publication Image">
     </div> -->
     <div class="publication-text">
-        <strong>Scalable summary statistics-based heritability estimation method with individual genotype level accuracy</strong><br>
+        <strong>Scalable summary statistics-based heritability estimation method with individual genotype level accuracy</strong>
         <p class="authors"><strong>Moonseong Jeong</strong>, Ali Pazokitoroudi, Zhengtong Liu, Sriram Sankararaman</p>
-      [bioRxiv](https://www.biorxiv.org/content/10.1101/2024.03.09.584258v1)
+      <a href="https://www.biorxiv.org/content/10.1101/2024.03.09.584258v1">bioRxiv</a>
     </div>
 </div>
 
@@ -60,9 +60,9 @@ author_profile: true
         <img src="publication-image.jpg" alt="Publication Image">
     </div> -->
     <div class="publication-text">
-        <strong>The MOSDEF Survey: Neon as a Probe of ISM Physical Conditions at High Redshift</strong><br>
+        <strong>The MOSDEF Survey: Neon as a Probe of ISM Physical Conditions at High Redshift</strong>
         <p class="authors"><strong>Moonseong Jeong</strong>,  Alice E. Shapley, Ryan L. Sanders, et. al.</p>
-      [The Astrophysical Journal Letters](https://iopscience.iop.org/article/10.3847/2041-8213/abba7a/meta)
+        <a href="https://iopscience.iop.org/article/10.3847/2041-8213/abba7a/meta">The Astrophysical Journal Letters</a>
     </div>
 </div>
 
