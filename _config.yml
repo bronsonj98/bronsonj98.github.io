@@ -11,7 +11,7 @@ locale                   : "en-US"
 title                    : "Bronson Jeong (정문성)"
 title_separator          : "-"
 name                     : &name "Bronson Jeong"
-description              : &description "PhD Student, Department of Computer Science, UCLA"
+description              : &description
 url                      : https://bronsonj98.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "bronsonj98/bronsonj98.github.io"
