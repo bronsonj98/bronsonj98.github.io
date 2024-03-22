@@ -28,8 +28,22 @@ author_profile: true
 
 ## Preprints
 <div class="publication-entry">
-  <!--<div class="publication-figure">
+    <!-- <div class="publication-figure">
+        <img src="publication-image.jpg" alt="Publication Image">
     </div> -->
+    <div class="publication-text">
+        **Scalable summary statistics-based heritability estimation method with individual genotype level accuracy**
+
+        <p class="authors"><strong>Moonseong Jeong</strong>, Ali Pazokitoroudi, Zhengtong Liu, Sriram Sankararaman</p>
+
+        [Paper](paper-link)
+    </div>
+</div>
+
+<!--
+<div class="publication-entry">
+  <div class="publication-figure">
+    </div>
   <div class="publication-text">
     <p>
       <strong>Scalable summary statistics-based heritability estimation method with individual genotype level accuracy</strong><br>
@@ -39,6 +53,7 @@ author_profile: true
     </p>
   </div>
 </div>
+-->
 
 
 ## 2020
