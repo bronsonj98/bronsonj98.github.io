@@ -32,11 +32,9 @@ author_profile: true
         <img src="publication-image.jpg" alt="Publication Image">
     </div> -->
     <div class="publication-text">
-        **Scalable summary statistics-based heritability estimation method with individual genotype level accuracy**
-
+        <strong>Scalable summary statistics-based heritability estimation method with individual genotype level accuracy</strong><br>
         <p class="authors"><strong>Moonseong Jeong</strong>, Ali Pazokitoroudi, Zhengtong Liu, Sriram Sankararaman</p>
-
-        [Paper](paper-link)
+      [bioRxiv](https://www.biorxiv.org/content/10.1101/2024.03.09.584258v1)
     </div>
 </div>
 
