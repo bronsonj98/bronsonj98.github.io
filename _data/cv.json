@@ -65,14 +65,7 @@
   "interests": [],
   "references": [],
   "publications": [
-    {
-      "name": "RAPTOR: Scalable Train-Free Embeddings for 3D Medical Volumes Leveraging Pretrained 2D Foundation Models.",
-      "publisher": "Preprint",
-      "releaseDate": "",
-      "website": "",
-      "summary": ""
-    },
-    {
+       {
       "name": "Paper Title Number 2",
       "publisher": "Journal 1",
       "releaseDate": "2010-10-01",
