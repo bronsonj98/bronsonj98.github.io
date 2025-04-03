@@ -66,11 +66,12 @@
   "references": [],
   "publications": [
     {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "http://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
+      "name": "RAPTOR: Scalable
+      Train-Free Embeddings for 3D Medical Volumes Leveraging Pretrained 2D Foundation Models.",
+      "publisher": "Preprint",
+      "releaseDate": "",
+      "website": "",
+      "summary": ""
     },
     {
       "name": "Paper Title Number 2",
