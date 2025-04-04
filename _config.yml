@@ -80,9 +80,9 @@ publication_category:
   preprints:
     title: 'PREPRINTS & IN PREPARATION'
   manuscripts:
-    title: 'Journal Articles'
+    title: 'Peer-reviewed Journal Articles'
   conferences:
-    title: 'Conference Papers'
+    title: 'Peer-reviewed Conference Papers'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"

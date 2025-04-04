@@ -1,0 +1,16 @@
+<div class="talk-item">
+    <p><strong>{{ post.title }}</strong></p>
+  
+    {% if post.event or post.location or post.date %}
+      <p>
+        {% if post.event %}{{ post.event }}{% endif %}
+        {% if post.location %}, {{ post.location }}{% endif %}
+        {% if post.date %} — {{ post.date | date: "%Y" }}{% endif %}
+      </p>
+    {% endif %}
+  
+    {% if post.description %}
+      <p>{{ post.description }}</p>
+    {% endif %}
+  </div>
+  
