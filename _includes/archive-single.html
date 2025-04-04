@@ -2,9 +2,7 @@
   <div class="pub-item">
     <p><strong>{{ post.title }}</strong></p>
 
-    {% assign my_name = "Jeong, M." %}
-    {% assign author_list = post.authors | replace: my_name, "<strong>" | append: my_name | append: "</strong>" %}
-    <p>{{ author_list | markdownify | strip_newlines }}</p>
+    <p>{{ post.authors | markdownify | strip_newlines }}</p>
 
     {% if post.venue %}
       <p>{{ post.venue }}{% if post.date %}, {{ post.date | date: "%Y" }}{% endif %}</p>
@@ -21,13 +19,5 @@
     {% endif %}
   </div>
 {% else %}
-  {# fallback default layout for other collections #}
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    <h2 class="archive__item-title" itemprop="headline">
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-    </h2>
-    {% if post.excerpt %}
-      <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt }}</p>
-    {% endif %}
-  </article>
+  <!-- fallback for other collections -->
 {% endif %}

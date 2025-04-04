@@ -6,6 +6,6 @@ date: 2020-08-01
 venue: The Astrophysical Journal
 paperurl: #
 citation: #
-authors: Jeong, M., Shapley, A. E., Sanders, …, and Barro, G.
+authors: <u>Jeong, M.</u>, Shapley, A. E., Sanders, …, and Barro, G.
 category: manuscripts
 ---

@@ -7,7 +7,7 @@ date: 2025-03-01
 venue: preprint
 paperurl: #
 citation: #
-authors: "An*, U., Jeong*, M., Lee, S. A., Gorla, A., Yang, Y., and Sankararaman, S."
+authors: "An*, U., <u>Jeong*, M.</u>, Lee, S. A., Gorla, A., Yang, Y., and Sankararaman, S."
 category: preprints
 #note: "*Equal contribution"
 ---

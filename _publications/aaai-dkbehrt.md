@@ -6,6 +6,6 @@ date: 2025-02-01
 venue: AAAI workshop on AI for Medicine and Healthcare
 paperurl: #
 citation: #
-authors: An, U., Lee, S. A., Jeong, M., Gorla, A., Chiang, J. N., and Sankararaman, S.
+authors: An, U., Lee, S. A., <u>Jeong, M.</u>, Gorla, A., Chiang, J. N., and Sankararaman, S.
 category: conferences
 ---
