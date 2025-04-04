@@ -4,7 +4,7 @@ collection: publications
 permalink: /publication/preprint-raptor
 excerpt: #
 date: 2025-03-01
-venue: #
+venue: preprint
 paperurl: #
 citation: #
 authors: "An*, U., Jeong*, M., Lee, S. A., Gorla, A., Yang, Y., and Sankararaman, S."

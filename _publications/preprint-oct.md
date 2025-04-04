@@ -4,7 +4,7 @@ collection: publications
 permalink: /publication/preprint-oct
 excerpt: #
 date: 2025-03-01
-venue: #
+venue: preprint
 paperurl: #
 citation: #
 authors: Jeong, M., Chiu, A. M., An, U., Avram, O., Zekavat S., and Sankararaman S.
