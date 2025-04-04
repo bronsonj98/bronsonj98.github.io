@@ -1,18 +1,21 @@
 {% if page.collection == "publications" or post.collection == "publications" %}
   <div class="pub-item">
-    <p>
-      <strong>{{ post.title }}</strong><br>
-      {{ post.authors }}<br>
-      {% if post.venue %}
-        {{ post.venue }},
-      {% endif %}
-      {% if post.date %}
-        {{ post.date | date: "%Y" }}
-      {% endif %}
-    </p>
+    <p><strong>{{ post.title }}</strong></p>
+
+    {% assign my_name = "Jeong, M." %}
+    {% assign author_list = post.authors | replace: my_name, "<strong>" | append: my_name | append: "</strong>" %}
+    <p>{{ author_list | markdownify | strip_newlines }}</p>
+
+    {% if post.venue %}
+      <p>{{ post.venue }}{% if post.date %}, {{ post.date | date: "%Y" }}{% endif %}</p>
+    {% elsif post.date %}
+      <p>{{ post.date | date: "%Y" }}</p>
+    {% endif %}
+
     {% if post.paperurl %}
       <p><a href="{{ post.paperurl }}" target="_blank">[PDF]</a></p>
     {% endif %}
+
     {% if post.note %}
       <p><em>{{ post.note }}</em></p>
     {% endif %}
