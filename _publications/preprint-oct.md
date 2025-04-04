@@ -7,6 +7,6 @@ date: 2025-03-01
 venue: preprint
 paperurl: #
 citation: #
-authors: Jeong, M., Chiu, A. M., An, U., Avram, O., Zekavat S., and Sankararaman S.
+authors: <u>Jeong, M.</u>, Chiu, A. M., An, U., Avram, O., Zekavat S., and Sankararaman S.
 category: preprints
 ---
