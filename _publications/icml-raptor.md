@@ -8,6 +8,6 @@ venue: ICML 2025 Spotlight
 paperurl: #
 citation: #
 authors: "An*, U., <u>Jeong*, M.</u>, Lee, S. A., Gorla, A., Yang, Y., and Sankararaman, S."
-category: manuscripts
+category: conferences
 note: "*Equal contribution"
 ---
