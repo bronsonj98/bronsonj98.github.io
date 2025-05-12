@@ -5,7 +5,7 @@
     <p>{{ post.authors | markdownify | strip_newlines }}</p>
 
     {% if post.venue %}
-      <p>{{ post.venue }}{% if post.date %}, {{ post.date | date: "%Y" }}{% endif %}</p>
+      <p><em>{{ post.venue }}</em>{% if post.date %}, {{ post.date | date: "%Y" }}{% endif %}</p>
     {% elsif post.date %}
       <p>{{ post.date | date: "%Y" }}</p>
     {% endif %}

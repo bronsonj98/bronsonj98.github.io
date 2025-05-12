@@ -1,16 +1,26 @@
 <div class="talk-item">
-    <p><strong>{{ post.title }}</strong></p>
-  
-    {% if post.event or post.location or post.date %}
-      <p>
-        {% if post.event %}{{ post.event }}{% endif %}
-        {% if post.location %}, {{ post.location }}{% endif %}
-        {% if post.date %} — {{ post.date | date: "%Y" }}{% endif %}
-      </p>
+  <p><strong>{{ post.title }}</strong></p>
+
+  {% assign show_line = false %}
+  <p>
+    {% if post.event %}
+      <em>{{ post.event }}</em>
+      {% assign show_line = true %}
     {% endif %}
-  
-    {% if post.description %}
-      <p>{{ post.description }}</p>
+
+    {% if post.location %}
+      {% if show_line %}, {% endif %}
+      {{ post.location }}
+      {% assign show_line = true %}
     {% endif %}
-  </div>
-  
+
+    {% if post.date %}
+      {% if show_line %} — {% endif %}
+      {{ post.date | date: "%Y" }}
+    {% endif %}
+  </p>
+
+  {% if post.description %}
+    <p>{{ post.description }}</p>
+  {% endif %}
+</div>
