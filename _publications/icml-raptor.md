@@ -1,13 +1,13 @@
 ---
 title: "RAPTOR: Scalable Train-Free Embeddings for 3D Medical Volumes Leveraging Pretrained 2D Foundation Models"
 collection: publications
-permalink: /publication/preprint-raptor
+permalink: /publication/icml-raptor
 excerpt: #
-date: 2025-03-01
-venue: preprint
+date: 2025-05-01
+venue: ICML 2025 Spotlight
 paperurl: #
 citation: #
 authors: "An*, U., <u>Jeong*, M.</u>, Lee, S. A., Gorla, A., Yang, Y., and Sankararaman, S."
-category: preprints
-#note: "*Equal contribution"
+category: manuscripts
+note: "*Equal contribution"
 ---
