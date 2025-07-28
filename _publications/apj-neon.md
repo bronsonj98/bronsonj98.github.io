@@ -3,7 +3,7 @@ title: "The MOSDEF Survey: Neon as a Probe of ISM Physical Conditions at High Re
 collection: publications
 excerpt: #
 date: 2020-08-01
-venue: The Astrophysical Journal
+venue: The Astrophysical Journal Letters
 paperurl: #
 citation: #
 authors: <u>Jeong, M.</u>, Shapley, A. E., Sanders, …, and Barro, G.
