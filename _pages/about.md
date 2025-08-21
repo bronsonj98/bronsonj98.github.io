@@ -6,16 +6,12 @@ redirect_from:
   - /about/
   - /about.html
 ---
+### About
+Hi, my name is Bronson (Moonseong) Jeong and I’m a PhD student in Computer Science at UCLA, advised by Professor [**Sriram Sankararaman**](http://web.cs.ucla.edu/~sriram/). I work on methods at the interface of **statistical genetics**, **machine learning**, and **clinical informatics**, with an emphasis on models that scale to **biobank-size cohorts** and remain **interpretable and reproducible**. Specifically, my research is focused on understanding the genetic basis of complex traits (such as height or diseases). As an undergrad, I studied **Mathematics of Computation** and **Physics** also at UCLA, and led data analysis in an astronomical spectroscopy project with Professor [**Alice Shapley**](https://www.astro.ucla.edu/~aes/). This was an experience that shaped my approach to **signal detection** and **uncertainty quantification** in large, noisy datasets.
 
-Hi, my name is Bronson (Moonseong) Jeong and I'm a 3rd year PhD student in Computer Science at UCLA, advised by Professor [Sriram Sankararaman](http://web.cs.ucla.edu/~sriram/). My undergraduate training is in Mathematics of Computation and Physics, also at UCLA. My interest primarily lies in developing scalable models to make sense of large, complex and often noisy data, a pursuit well-suited to computational medicine. This field is particularly fascinating due to its diverse data types, ranging from Electronic Health Records to DNA sequences, all demanding domain-specific explanation and analysis. More specifically, my research focuses on understanding the genetic basis of complex traits (such as disease, height, etc.) at the population scale by linking genomics with datasets of diverse modalities.
-
-During my undergraduate years, I had the opportunity to collaborate with Professor [Alice Shapley](https://www.astro.ucla.edu/~aes/) on a research project related to high-redshift galaxies [[paper]](https://iopscience.iop.org/article/10.3847/2041-8213/abba7a). This experience was an early step in my ongoing journey of exploring the complexities of large data in various forms.
-
------
-
-Current research topics:
-* Scalable summary statistics-based population parameter inference in biobanks
-* Train-free foundation model for high-dimensional phenotypes in biobanks
-* Integrating EHR records and multimodal data for precision care
-* Investigating opioid prescription patterns for addiction prevention
-* Coalescent theoretic limit of reference-based local ancestry inference (LAI)
+### Research interests
+- **Population-scale genetic inference:** Efficient estimators using **summary statistics** to recover architecture and population parameters when raw data are constrained.  
+- **High-dimensional phenotypes:** “Train-free” representations (RAPTOR) to make medical imaging and other complex phenotypes usable across tasks without heavy compute.  
+- **EHR × genomics integration:** Methods that combine clinical records with genomic features for **interpretable** risk prediction and cohort discovery.
+- **Opioid prescription data:** Preventing opioid addiction by disentangling the California CURES database for controlled substances.
+- **Theory for ancestry-aware models:** Coalescent-theoretic limits and robustness for reference-based local ancestry inference.
