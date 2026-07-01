@@ -1,6 +1,6 @@
 {% if page.collection == "publications" or post.collection == "publications" %}
   <div class="pub-item">
-    <p><strong>{{ post.title }}</strong></p>
+    <p class="pub-item__title"><strong><a href="{{ post.url | prepend: base_path }}">{{ post.title }}</a></strong></p>
 
     <p>{{ post.authors | markdownify | strip_newlines }}</p>
 
@@ -10,9 +10,12 @@
       <p>{{ post.date | date: "%Y" }}</p>
     {% endif %}
 
-    {% if post.paperurl %}
-      <p><a href="{{ post.paperurl }}" target="_blank">[PDF]</a></p>
-    {% endif %}
+    <p class="pub-item__links">
+      <a href="{{ post.url | prepend: base_path }}">Details</a>
+      {% if post.paperurl and post.paperurl != "#" %}
+        <a href="{{ post.paperurl }}" target="_blank">PDF</a>
+      {% endif %}
+    </p>
 
     {% if post.note %}
       <p><em>{{ post.note }}</em></p>

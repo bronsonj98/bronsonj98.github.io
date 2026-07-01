@@ -1,10 +1,9 @@
 # Authors
 
-Name Name:
-  name        : "Bronson (Moonseong) Jeong"
-  uri         : "http://name.com"
-  email       : "[bronsonj]@cs[dot]ucla[dot]edu"
-  bio         : "This is the first name."
-  avatar      : "bio-photo-2.jpg"
-  twitter     : "name"
-  google_plus : "Name"
+Bronson Jeong:
+  name        : "Bronson Jeong"
+  uri         : "https://bronsonj98.github.io"
+  email       :
+  bio         : "Computational genomics and biomedical machine learning researcher; PhD candidate in Computer Science at UCLA."
+  avatar      : "profile.jpg"
+  googlescholar: "https://scholar.google.com/citations?user=raOG4TkAAAAJ&hl=en&oi=ao"

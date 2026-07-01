@@ -1,0 +1,125 @@
+---
+layout: default
+---
+
+{% include base_path %}
+{% assign featured_publications = site.publications | sort: "date" | reverse %}
+
+<main id="main" class="modern-home" role="main">
+  <section class="profile-hero" aria-labelledby="profile-title">
+    <div class="profile-hero__copy">
+      <p class="profile-hero__eyebrow">Computational genomics / biomedical machine learning / statistical inference</p>
+      <h1 id="profile-title">Bronson Jeong</h1>
+      <p class="profile-hero__subtitle">PhD candidate in Computer Science at UCLA</p>
+      <p class="profile-hero__statement">{{ page.profile_statement }}</p>
+      <div class="profile-hero__actions" aria-label="Primary links">
+        <a class="profile-button profile-button--primary" href="{{ base_path }}/publications/">Publications</a>
+        <a class="profile-button" href="{{ site.author.googlescholar }}">Google Scholar</a>
+        <a class="profile-button" href="{{ base_path }}/cv/">CV</a>
+        <a class="profile-button" href="https://github.com/bronsonj98">GitHub</a>
+      </div>
+    </div>
+    <aside class="profile-card" aria-label="Profile summary">
+      <img src="{{ base_path }}/images/profile.jpg" alt="Bronson Jeong" class="profile-card__image">
+      <div class="profile-card__body">
+        <p class="profile-card__name">Bronson Jeong <span>Moonseong Jeong</span></p>
+        <dl>
+          <div>
+            <dt>Affiliation</dt>
+            <dd>UCLA Computer Science</dd>
+          </div>
+          <div>
+            <dt>Advisor</dt>
+            <dd>Sriram Sankararaman</dd>
+          </div>
+          <div>
+            <dt>Focus</dt>
+            <dd>Scalable methods for genetics, imaging, and clinical data</dd>
+          </div>
+          <div>
+            <dt>Location</dt>
+            <dd>Los Angeles, CA</dd>
+          </div>
+        </dl>
+      </div>
+    </aside>
+  </section>
+
+  <section class="signal-strip" aria-label="Research snapshot">
+    <div>
+      <strong>{{ site.publications | size }}</strong>
+      <span>research outputs listed</span>
+    </div>
+    <div>
+      <strong>ICML Spotlight</strong>
+      <span>foundation-model embeddings for 3D medical volumes</span>
+    </div>
+    <div>
+      <strong>Genome Research</strong>
+      <span>summary-statistics heritability estimation</span>
+    </div>
+  </section>
+
+  <section class="home-section" id="research" aria-labelledby="research-title">
+    <div class="section-heading">
+      <p>Research program</p>
+      <h2 id="research-title">Methods that turn large biomedical data into interpretable discovery.</h2>
+    </div>
+    <div class="research-grid">
+      {% for area in page.research_areas %}
+        <article class="research-card">
+          <p class="research-card__label">{{ area.label }}</p>
+          <h3>{{ area.title }}</h3>
+          <p>{{ area.text }}</p>
+        </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="home-section home-section--split" aria-labelledby="about-title">
+    <div class="section-heading">
+      <p>Profile</p>
+      <h2 id="about-title">A researcher trained across statistics, computer science, and physical science.</h2>
+    </div>
+    <div class="profile-narrative">
+      {{ content }}
+    </div>
+  </section>
+
+  <section class="home-section" id="selected-publications" aria-labelledby="selected-publications-title">
+    <div class="section-heading section-heading--row">
+      <div>
+        <p>Selected publications</p>
+        <h2 id="selected-publications-title">Recent papers and preprints</h2>
+      </div>
+      <a class="text-link" href="{{ base_path }}/publications/">View all publications</a>
+    </div>
+    <div class="publication-list">
+      {% for post in featured_publications limit:6 %}
+        <article class="publication-row">
+          <div class="publication-row__meta">
+            <span>{{ post.date | date: "%Y" }}</span>
+            {% if post.venue %}
+              <span>{{ post.venue }}</span>
+            {% endif %}
+          </div>
+          <div class="publication-row__body">
+            <h3><a href="{{ base_path }}{{ post.url }}">{{ post.title }}</a></h3>
+            {% if post.authors %}
+              <p>{{ post.authors | markdownify | strip_html | strip_newlines }}</p>
+            {% endif %}
+            <div class="publication-row__links">
+              <a href="{{ base_path }}{{ post.url }}">Details</a>
+              {% if post.paperurl and post.paperurl != "#" %}
+                <a href="{{ post.paperurl }}">PDF</a>
+              {% endif %}
+              {% if post.note %}
+                <span>{{ post.note }}</span>
+              {% endif %}
+            </div>
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  </section>
+</main>

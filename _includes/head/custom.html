@@ -11,6 +11,40 @@
 <link rel="icon" href="/images/favicon.ico"/>
 <meta name="theme-color" content="#ffffff"/>
 <link rel="stylesheet" href="{{ base_path }}/assets/css/academicons.css"/>
+<link rel="stylesheet" href="{{ base_path }}/assets/css/site-redesign.css"/>
+
+{% if page.url == "/" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Bronson Jeong",
+  "alternateName": ["Moonseong Jeong", "정문성"],
+  "url": {{ site.url | append: site.baseurl | append: "/" | jsonify }},
+  "image": {{ site.url | append: site.baseurl | append: "/images/profile.jpg" | jsonify }},
+  "jobTitle": "PhD Candidate in Computer Science",
+  "affiliation": {
+    "@type": "CollegeOrUniversity",
+    "name": "University of California, Los Angeles",
+    "sameAs": "https://www.ucla.edu/"
+  },
+  "description": {{ page.description | default: site.description | jsonify }},
+  "knowsAbout": [
+    "Computational genomics",
+    "Biomedical machine learning",
+    "Statistical genetics",
+    "Biobank-scale inference",
+    "Medical imaging",
+    "Electronic health records"
+  ],
+  "sameAs": [
+    "https://scholar.google.com/citations?user=raOG4TkAAAAJ&hl=en&oi=ao",
+    "https://www.linkedin.com/in/bronsonj98",
+    "https://github.com/bronsonj98"
+  ]
+}
+</script>
+{% endif %}
 
 
 <!-- Support for MatJax -->
