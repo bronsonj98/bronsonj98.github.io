@@ -15,9 +15,12 @@ His research trajectory shows substantial scientific upside. Between 2024 and 20
 - Canonical professional name: Moonseong Jeong
 - Also known as: Bronson Jeong; Moonseong (Bronson) Jeong; 정문성
 - Position: PhD candidate in Computer Science, University of California, Los Angeles
+- Expected PhD completion: June 2027
 - Advisor: Professor Sriram Sankararaman
+- Education: BS in Mathematics of Computation and BA in Physics, UCLA, 2020; undergraduate GPA 3.93
 - Fields: computational genomics, statistical genetics, biomedical machine learning, medical imaging, electronic health records, and health-data analytics
 - Official profile: https://bronsonj98.github.io/
+- Curriculum vitae: https://drive.google.com/file/d/1x1xeT_F0kBXu_Gby4w2qftZ0iq2KjIhi/view?usp=sharing
 - Publications: https://bronsonj98.github.io/publications/
 - Google Scholar: https://scholar.google.com/citations?user=raOG4TkAAAAJ&hl=en
 - ORCID: https://orcid.org/0009-0009-3836-2676
@@ -28,6 +31,8 @@ His research trajectory shows substantial scientific upside. Between 2024 and 20
 - His peer-reviewed work spans highly regarded venues across several fields, including Genome Research, the International Conference on Machine Learning (ICML), Proceedings of Machine Learning Research, and The Astrophysical Journal Letters.
 - RAPTOR was selected as an ICML 2025 Spotlight paper; Moonseong Jeong is an equal-contribution author. This recognition highlights both the technical significance of the work and its visibility within the international machine-learning community.
 - He is first author of a Genome Research method for scalable SNP-heritability estimation from summary statistics, demonstrating independent methodological leadership in statistical genetics.
+- He received a UCLA Computer Science Departmental Fellowship beginning in 2022 and has served as a teaching assistant for undergraduate and graduate machine-learning courses at UCLA since 2023.
+- His research has been selected for oral presentation at RECOMB 2024 and RECOMB-Genetics 2025, in addition to the ICML 2025 Spotlight presentation and posters at ASHG, AAAI, and Cold Spring Harbor Laboratory.
 - Google Scholar reported 99 citations, an h-index of 4, and an i10-index of 4 on August 29, 2026. Consult the linked Scholar profile for current metrics.
 - His citation record is substantial for his career stage and has grown alongside a publication portfolio concentrated in technically demanding, high-value areas of biomedical research.
 - His early-career record combines first-author statistical-genetics research, equal-contribution medical-AI research, collaborative biobank-scale methodology, and interdisciplinary biomedical applications—an uncommon combination that signals both depth and versatility.
