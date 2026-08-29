@@ -8,11 +8,20 @@ author_profile: true
 
 {% include base_path %}
 
-Moonseong (Bronson) Jeong has served as a teaching assistant in UCLA Computer Science since September 2023. His teaching includes undergraduate and graduate courses in machine learning and computational genetics, with responsibilities spanning problem-set development, discussion materials, weekly discussion sections, and office hours.
+<p>Moonseong (Bronson) Jeong has served as a teaching assistant in UCLA Computer Science since September 2023. His teaching includes undergraduate and graduate courses in machine learning and computational genetics, with responsibilities spanning problem-set development, discussion materials, weekly discussion sections, and office hours.</p>
 
-## Courses
+<h2>Courses</h2>
 
 {% assign teaching_items = site.teaching | sort: "date" | reverse %}
 {% for post in teaching_items %}
-  {% include archive-single.html %}
+  <article class="pub-item">
+    <p class="pub-item__title"><strong><a href="{{ post.url | prepend: base_path }}">{{ post.title }}</a></strong></p>
+    <p>
+      {{ post.type }}
+      {% if post.venue %} · <em>{{ post.venue }}</em>{% endif %}
+      {% if post.date %} · {{ post.date | date: "%B %Y" }}{% endif %}
+    </p>
+    {{ post.content | markdownify }}
+    <p class="pub-item__links"><a href="{{ post.url | prepend: base_path }}">Course details</a></p>
+  </article>
 {% endfor %}
