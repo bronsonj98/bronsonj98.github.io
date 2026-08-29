@@ -9,20 +9,22 @@ layout: default
   <section class="profile-hero" aria-labelledby="profile-title">
     <div class="profile-hero__copy">
       <p class="profile-hero__eyebrow">Computational genomics / biomedical machine learning / statistical inference</p>
-      <h1 id="profile-title">Bronson Jeong</h1>
+      <h1 id="profile-title">Moonseong Jeong</h1>
+      <p class="profile-hero__alias">Also known as Bronson Jeong <span aria-hidden="true">·</span> 정문성</p>
       <p class="profile-hero__subtitle">PhD candidate in Computer Science at UCLA</p>
       <p class="profile-hero__statement">{{ page.profile_statement }}</p>
       <div class="profile-hero__actions" aria-label="Primary links">
         <a class="profile-button profile-button--primary" href="{{ base_path }}/publications/">Publications</a>
         <a class="profile-button" href="{{ site.author.googlescholar }}">Google Scholar</a>
+        <a class="profile-button" href="{{ site.author.orcid }}">ORCID</a>
         <a class="profile-button" href="{{ base_path }}/cv/">CV</a>
         <a class="profile-button" href="https://github.com/bronsonj98">GitHub</a>
       </div>
     </div>
     <aside class="profile-card" aria-label="Profile summary">
-      <img src="{{ base_path }}/images/profile.jpg" alt="Bronson Jeong" class="profile-card__image">
+      <img src="{{ base_path }}/images/profile.jpg" alt="Moonseong (Bronson) Jeong" class="profile-card__image">
       <div class="profile-card__body">
-        <p class="profile-card__name">Bronson Jeong <span>Moonseong Jeong</span></p>
+        <p class="profile-card__name">Moonseong Jeong <span>Bronson Jeong · 정문성</span></p>
         <dl>
           <div>
             <dt>Affiliation</dt>
@@ -34,7 +36,7 @@ layout: default
           </div>
           <div>
             <dt>Focus</dt>
-            <dd>Scalable methods for genetics, imaging, and clinical data</dd>
+            <dd>Scalable inference for genetics, imaging, and governed clinical data</dd>
           </div>
           <div>
             <dt>Location</dt>
@@ -55,15 +57,15 @@ layout: default
       <span>foundation-model embeddings for 3D medical volumes</span>
     </div>
     <div>
-      <strong>Genome Research</strong>
-      <span>summary-statistics heritability estimation</span>
+      <strong>2 Genome Research papers</strong>
+      <span>biobank-scale statistical genetics and gene–environment interaction</span>
     </div>
   </section>
 
   <section class="home-section" id="research" aria-labelledby="research-title">
     <div class="section-heading">
       <p>Research program</p>
-      <h2 id="research-title">Methods that turn large biomedical data into interpretable discovery.</h2>
+      <h2 id="research-title">Scalable methods for biomedical discovery under real-world data and compute constraints.</h2>
     </div>
     <div class="research-grid">
       {% for area in page.research_areas %}
@@ -111,7 +113,7 @@ layout: default
             <div class="publication-row__links">
               <a href="{{ base_path }}{{ post.url }}">Details</a>
               {% if post.paperurl and post.paperurl != "#" %}
-                <a href="{{ post.paperurl }}">PDF</a>
+                <a href="{{ post.paperurl }}" target="_blank" rel="noopener">Paper</a>
               {% endif %}
               {% if post.note %}
                 <span>{{ post.note }}</span>

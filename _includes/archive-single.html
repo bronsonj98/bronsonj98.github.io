@@ -13,7 +13,7 @@
     <p class="pub-item__links">
       <a href="{{ post.url | prepend: base_path }}">Details</a>
       {% if post.paperurl and post.paperurl != "#" %}
-        <a href="{{ post.paperurl }}" target="_blank">PDF</a>
+        <a href="{{ post.paperurl }}" target="_blank" rel="noopener">Paper</a>
       {% endif %}
     </p>
 

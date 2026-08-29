@@ -1,32 +1,32 @@
 {
   "basics": {
-    "name": "Bronson",
-    "email": "none@example.org",
+    "name": "Moonseong (Bronson) Jeong",
+    "email": "",
     "phone": "",
     "website": "https://bronsonj98.github.io",
-    "summary": "UCLA Computer Science PhD Student",
+    "summary": "Computational genomics and biomedical machine learning researcher; PhD candidate in Computer Science at UCLA.",
     "location": {
       "address": "",
       "postalCode": "",
-      "city": "Earth",
+      "city": "Los Angeles",
       "countryCode": "US",
-      "region": ""
+      "region": "CA"
     },
     "profiles": [
       {
         "network": "Google Scholar",
         "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+        "url": "https://scholar.google.com/citations?user=raOG4TkAAAAJ&hl=en"
       },
       {
         "network": "ORCID",
         "username": "",
-        "url": "http://orcid.org/yourorcidurl"
+        "url": "https://orcid.org/0009-0009-3836-2676"
       },
       {
         "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "username": "bronsonj98",
+        "url": "https://github.com/bronsonj98"
       }
     ]
   },

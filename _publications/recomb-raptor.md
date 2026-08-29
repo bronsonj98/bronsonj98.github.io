@@ -2,7 +2,7 @@
 title: "Train-free unsupervised volumetric embeddings using image foundation models enable improved predictions and genomic discoveries"
 collection: publications
 permalink: /publication/recomb-raptor
-excerpt: #
+excerpt: "A train-free approach to volumetric representation learning for medical prediction and imaging-genetics applications."
 date: 2025-04-25
 venue: RECOMB Genetics
 paperurl: #

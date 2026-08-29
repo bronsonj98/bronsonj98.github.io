@@ -51,8 +51,15 @@
   letter-spacing: 0;
 }
 
+.profile-hero__alias {
+  margin: 12px 0 0;
+  color: #1f7a8c;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
 .profile-hero__subtitle {
-  margin: 18px 0 0;
+  margin: 10px 0 0;
   color: #475569;
   font-size: clamp(1.15rem, 2vw, 1.55rem);
   font-weight: 700;
