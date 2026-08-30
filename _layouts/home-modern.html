@@ -3,7 +3,8 @@ layout: default
 ---
 
 {% include base_path %}
-{% assign featured_publications = site.publications | sort: "date" | reverse %}
+{% assign public_outputs = site.publications | where_exp: "post", "post.publication_status != 'in-preparation'" %}
+{% assign featured_publications = public_outputs | sort: "date" | reverse %}
 
 <main id="main" class="modern-home" role="main">
   <section class="profile-hero" aria-labelledby="profile-title">
@@ -53,7 +54,7 @@ layout: default
       <span>research outputs listed</span>
     </div>
     <div>
-      <strong>ICML Spotlight</strong>
+      <strong>ICML Spotlight · top 2.6%</strong>
       <span>foundation-model embeddings for 3D medical volumes</span>
     </div>
     <div>

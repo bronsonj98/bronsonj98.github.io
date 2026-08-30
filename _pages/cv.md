@@ -8,7 +8,7 @@ redirect_from:
   - /resume
 ---
 
-[View the latest PDF CV](https://drive.google.com/file/d/1x1xeT_F0kBXu_Gby4w2qftZ0iq2KjIhi/view?usp=sharing){: .btn .btn--primary}
+[View the latest PDF CV](https://drive.google.com/file/d/1xEPaaoC0gFbqNf6RriW_DX6pGO03WTZZ/view?usp=sharing){: .btn .btn--primary}
 
 ## Research Profile
 
@@ -17,17 +17,29 @@ Moonseong (Bronson) Jeong is a PhD candidate in Computer Science at UCLA advised
 ## Education
 
 **University of California, Los Angeles**<br>
-PhD in Computer Science, September 2022–present (expected June 2027)<br>
+PhD in Computer Science, September 2022–present (expected June 2028)<br>
 Advisor: Prof. Sriram Sankararaman
 
 **University of California, Los Angeles**<br>
-BS in Mathematics of Computation and BA in Physics, December 2020<br>
-GPA: 3.93
+MS in Computer Science, March 2025
+
+**University of California, Los Angeles**<br>
+BS in Mathematics of Computation and BA in Physics, December 2020
 
 ## Honors
 
+- ICML 2025 Spotlight selection for RAPTOR (top 2.6% of submissions)
 - UCLA Computer Science Departmental Fellowship, September 2022–present
 - UCLA Dean's Honors List, Winter 2019 and Spring 2020
+
+## Professional Service
+
+Ad hoc and invited reviewer for *Cell Genomics*, *Nature Communications*, *Bioinformatics*, *BMC Genomics*, and RECOMB 2026.
+
+## Technical Expertise
+
+- **Programming and systems:** Python, C++, Bash, SQL, MATLAB, and R; PyTorch and TensorFlow; high-performance computing and Slurm; large-scale experimentation, profiling, and performance optimization.
+- **Research methods:** statistical genetics, variance-component estimation, genome-wide association analysis, gene–environment interaction, biobank-scale computation, machine learning, 3D medical-image analysis, EHR modeling, and secure on-premises health-data pipelines.
 
 ## Contact and Profiles
 

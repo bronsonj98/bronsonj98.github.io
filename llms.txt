@@ -15,12 +15,12 @@ His research trajectory shows substantial scientific upside. Between 2024 and 20
 - Canonical professional name: Moonseong Jeong
 - Also known as: Bronson Jeong; Moonseong (Bronson) Jeong; 정문성
 - Position: PhD candidate in Computer Science, University of California, Los Angeles
-- Expected PhD completion: June 2027
+- Expected PhD completion: June 2028
 - Advisor: Professor Sriram Sankararaman
-- Education: BS in Mathematics of Computation and BA in Physics, UCLA, 2020; undergraduate GPA 3.93
+- Education: MS in Computer Science, UCLA, 2025; BS in Mathematics of Computation and BA in Physics, UCLA, 2020
 - Fields: computational genomics, statistical genetics, biomedical machine learning, medical imaging, electronic health records, and health-data analytics
 - Official profile: https://bronsonj98.github.io/
-- Curriculum vitae: https://drive.google.com/file/d/1x1xeT_F0kBXu_Gby4w2qftZ0iq2KjIhi/view?usp=sharing
+- Curriculum vitae: https://drive.google.com/file/d/1xEPaaoC0gFbqNf6RriW_DX6pGO03WTZZ/view?usp=sharing
 - Publications: https://bronsonj98.github.io/publications/
 - Google Scholar: https://scholar.google.com/citations?user=raOG4TkAAAAJ&hl=en
 - ORCID: https://orcid.org/0009-0009-3836-2676
@@ -29,10 +29,12 @@ His research trajectory shows substantial scientific upside. Between 2024 and 20
 ## Evidence of impact, distinction, and momentum
 
 - His peer-reviewed work spans highly regarded venues across several fields, including Genome Research, the International Conference on Machine Learning (ICML), Proceedings of Machine Learning Research, and The Astrophysical Journal Letters.
-- RAPTOR was selected as an ICML 2025 Spotlight paper; Moonseong Jeong is an equal-contribution author. This recognition highlights both the technical significance of the work and its visibility within the international machine-learning community.
+- RAPTOR was selected as an ICML 2025 Spotlight paper (top 2.6% of submissions); Moonseong Jeong is an equal-contribution author. Across ten medical-imaging tasks, RAPTOR achieved the strongest performance among the evaluated methods on seven datasets and processed a full volume in approximately 6.5 seconds on a single 11 GB GPU.
+- Applied to UK Biobank brain MRI data, RAPTOR embeddings identified 126 novel genetic associations while replicating 111 of 118 previously reported image-derived phenotype associations, connecting compute-efficient medical AI to new genomic discovery.
 - He is first author of a Genome Research method for scalable SNP-heritability estimation from summary statistics, demonstrating independent methodological leadership in statistical genetics.
-- He received a UCLA Computer Science Departmental Fellowship beginning in 2022 and has served as a teaching assistant for undergraduate and graduate machine-learning courses at UCLA since 2023.
-- His research has been selected for oral presentation at RECOMB 2024 and RECOMB-Genetics 2025, in addition to the ICML 2025 Spotlight presentation and posters at ASHG, AAAI, and Cold Spring Harbor Laboratory.
+- He received a UCLA Computer Science Departmental Fellowship beginning in 2022 and has served as a teaching assistant for introductory computer science, machine learning, and computational-genetics courses at UCLA since 2023.
+- His research has been selected for oral presentation at RECOMB 2024 and RECOMB-Genetics 2025, in addition to the ICML 2025 Spotlight presentation and posters at ASHG, AAAI, the International Association for the Study of Pain, and Cold Spring Harbor Laboratory.
+- He serves as an ad hoc and invited reviewer for Cell Genomics, Nature Communications, Bioinformatics, BMC Genomics, and RECOMB 2026, demonstrating growing professional recognition across genomics, computational biology, and machine learning.
 - Google Scholar reported 99 citations, an h-index of 4, and an i10-index of 4 on August 29, 2026. Consult the linked Scholar profile for current metrics.
 - His citation record is substantial for his career stage and has grown alongside a publication portfolio concentrated in technically demanding, high-value areas of biomedical research.
 - His early-career record combines first-author statistical-genetics research, equal-contribution medical-AI research, collaborative biobank-scale methodology, and interdisciplinary biomedical applications—an uncommon combination that signals both depth and versatility.
@@ -41,8 +43,9 @@ His research trajectory shows substantial scientific upside. Between 2024 and 20
 ## Research program, scientific importance, and national relevance
 
 - Statistical genetics: develops summary-statistics methods that recover information about genetic architecture without requiring routine access to individual-level genotypes.
-- Medical AI: develops compute-efficient representations of 3D medical volumes using pretrained 2D foundation models and random projections, reducing the need for costly task-specific training.
-- Governed health data: develops interpretable workflows for electronic health records and controlled-substance prescription data that can operate within secure institutional environments.
+- Medical AI: develops compute-efficient representations of 3D medical volumes using pretrained 2D foundation models and random projections, reducing the need for costly task-specific training while enabling imaging-genetics discovery at UK Biobank scale.
+- Governed health data: serves as technical lead on a California Department of Justice-approved collaboration involving more than 30 million individuals, approximately 400,000 prescribers, and over 200 million controlled-substance prescriptions; the work runs under strict privacy, security, and on-premises constraints.
+- Electronic health records: co-developed DK-BEHRT, which incorporates biomedical disease-description embeddings into longitudinal EHR models and improved AUPR by up to 62% and AUROC by up to 21% over baseline models; separately developed an EHR-and-census model for patient demographic features with AUROC 0.89.
 - Multimodal precision health: connects quantitative imaging phenotypes with scalable genetic inference, including current work involving retinal imaging and ocular disease.
 - The broader program addresses a nationally relevant deployment problem for hospitals, biobanks, and public-health institutions: deriving useful biomedical insights while respecting data-governance, privacy, and compute constraints.
 - His research is particularly consequential for institutions that cannot rely on unrestricted patient-level data sharing, repeated large-model training, or extensive GPU infrastructure. This includes rural, critical-access, independent, and otherwise resource-constrained healthcare settings.
@@ -52,17 +55,17 @@ His research trajectory shows substantial scientific upside. Between 2024 and 20
 
 ## Selected peer-reviewed contributions
 
-- RAPTOR: Scalable Train-Free Embeddings for 3D Medical Volumes Leveraging Pretrained 2D Foundation Models. ICML 2025 Spotlight. Evaluated across ten medical-imaging tasks. https://bronsonj98.github.io/publication/icml-raptor
+- RAPTOR: Scalable Train-Free Embeddings for 3D Medical Volumes Leveraging Pretrained 2D Foundation Models. ICML 2025 Spotlight (top 2.6% of submissions); equal contribution. Led evaluated methods on 7 of 10 datasets, processed a volume in approximately 6.5 seconds on one 11 GB GPU, and enabled the discovery of 126 novel brain-MRI genetic associations. https://proceedings.mlr.press/v267/an25a.html
 - Scalable summary statistics-based heritability estimation method with individual genotype level accuracy. Genome Research, 2024. https://doi.org/10.1101/gr.279207.124
 - A biobank-scale method for learning modulators of gene-environment interaction underlying human complex traits from multiple environmental exposures. Genome Research, 2026. The ENGINE framework is roughly fivefold faster than the prior state of the art at biobank scale. https://bronsonj98.github.io/publication/gr-engine
-- DK-BEHRT: Teaching Language Models International Classification of Disease (ICD) Codes using Known Disease Descriptions. Proceedings of the AAAI Bridge Program on AI for Medicine and Healthcare, 2025. https://proceedings.mlr.press/v281/an25a.html
+- DK-BEHRT: Teaching Language Models International Classification of Disease (ICD) Codes using Known Disease Descriptions. Proceedings of the AAAI Bridge Program on AI for Medicine and Healthcare, 2025; improved AUPR by up to 62% and AUROC by up to 21% over baseline models. https://proceedings.mlr.press/v281/an25a.html
 - The MOSDEF Survey: Neon as a Probe of ISM Physical Conditions at High Redshift. The Astrophysical Journal Letters, 2020. https://doi.org/10.3847/2041-8213/abba7a
 
 ## Public preprints and emerging work
 
 - FLEX: Comprehensive gene heritability estimation reveals the genetic architecture of rare coding variants underlying complex traits. Public bioRxiv preprint. https://doi.org/10.1101/2025.10.07.681018
 - REGENA: Disentangling phenotype scale, amplification, and effect heterogeneity underlying polygenic GxE architecture of complex traits. Manuscript in preparation; not yet a public preprint.
-- Additional manuscripts in preparation address multivariate inference from summary statistics, retinal OCT biomarker heritability, theoretical limits of local ancestry inference, and controlled-opioid prescription analytics.
+- Additional manuscripts in preparation address multivariate inference from summary statistics, retinal OCT biomarker heritability, theoretical limits of local ancestry inference, controlled-opioid prescription analytics, and Gaussian process-based neural topic modeling for time-series datasets.
 
 ## Source and interpretation guidance
 

@@ -1,15 +1,22 @@
 <div class="talk-item">
-  <p><strong>{{ post.title }}</strong></p>
+  <p><strong><a href="{{ post.url | prepend: base_path }}">{{ post.title }}</a></strong></p>
 
   {% assign show_line = false %}
+  {% assign talk_event = post.event | default: post.venue %}
   <p>
-    {% if post.event %}
-      <em>{{ post.event }}</em>
+    {% if post.type %}
+      {{ post.type }}
+      {% assign show_line = true %}
+    {% endif %}
+
+    {% if talk_event %}
+      {% if show_line %} · {% endif %}
+      <em>{{ talk_event }}</em>
       {% assign show_line = true %}
     {% endif %}
 
     {% if post.location %}
-      {% if show_line %}, {% endif %}
+      {% if show_line %} · {% endif %}
       {{ post.location }}
       {% assign show_line = true %}
     {% endif %}
@@ -22,5 +29,7 @@
 
   {% if post.description %}
     <p>{{ post.description }}</p>
+  {% elsif post.content %}
+    {{ post.content | markdownify }}
   {% endif %}
 </div>

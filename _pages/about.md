@@ -15,10 +15,10 @@ research_areas:
     text: "Methods that estimate genetic architecture from aggregated association statistics when individual-level genotypes are restricted or costly to analyze."
   - label: "Medical AI"
     title: "Train-free embeddings for 3D medical volumes"
-    text: "RAPTOR uses frozen 2D foundation models and random projections to create compact volumetric representations without task-specific pretraining."
+    text: "RAPTOR uses frozen 2D foundation models and random projections to create compact volumetric representations without task-specific pretraining; across 10 evaluation tasks, it led the evaluated methods on 7 datasets."
   - label: "Clinical data"
     title: "Secure prescription and EHR analytics"
-    text: "Interpretable workflows for controlled-substance records and longitudinal clinical data that can run within governed institutional environments."
+    text: "Interpretable, on-premises workflows for governed clinical data, including a California prescription-monitoring collaboration spanning more than 30 million individuals and 200 million prescriptions."
   - label: "Multimodal precision health"
     title: "Connecting imaging phenotypes with genetic risk"
     text: "A current research direction connects quantitative retinal imaging traits with scalable genetic inference to study ocular disease."
@@ -26,6 +26,6 @@ research_areas:
 
 Moonseong (Bronson) Jeong is a PhD candidate in Computer Science at UCLA, advised by Prof. [Sriram Sankararaman](http://web.cs.ucla.edu/~sriram/). His research sits at the interface of machine learning, statistics, and biomedicine, with a focus on scalable and reproducible methods for understanding the genetic basis of complex traits and diseases.
 
-Before graduate school, Moonseong studied Mathematics of Computation and Physics at UCLA and worked on astronomical spectroscopy with Prof. [Alice Shapley](https://www.astro.ucla.edu/~aes/). That training continues to shape his approach to biomedical inference: careful modeling under noise, confounding, and limited observability.
+Moonseong earned an MS in Computer Science from UCLA in 2025 and previously completed a BS in Mathematics of Computation and a BA in Physics at UCLA. As an undergraduate, he worked on astronomical spectroscopy with Prof. [Alice Shapley](https://www.astro.ucla.edu/~aes/). That training continues to shape his approach to biomedical inference: careful modeling under noise, confounding, and limited observability.
 
 Across these projects, his research asks how biomedical methods can remain useful when institutions cannot freely centralize sensitive records or assume access to large computing infrastructure.
