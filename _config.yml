@@ -12,7 +12,7 @@ site_theme               : "default"
 title                    : "Moonseong Jeong (Bronson Jeong)"
 title_separator          : "-"
 name                     : &name "Moonseong Jeong"
-description              : &description "Moonseong (Bronson) Jeong is a computational genomics and biomedical machine learning researcher at UCLA who develops scalable methods for genetic discovery, 3D medical imaging, and governed clinical data."
+description              : &description "Moonseong Jeong, also known as Bronson Jeong, is a computational genomics and biomedical machine learning researcher at UCLA who develops scalable methods for genetic discovery, 3D medical imaging, and governed clinical data."
 url                      : https://bronsonj98.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "bronsonj98/bronsonj98.github.io"
@@ -36,7 +36,7 @@ author:
   googlescholar    : "https://scholar.google.com/citations?user=raOG4TkAAAAJ&hl=en&oi=ao"
   impactstory      : # URL
   orcid            : "https://orcid.org/0009-0009-3836-2676"
-  semantic         : # URL
+  semantic         : "https://www.semanticscholar.org/author/Moonseong-Jeong/2254362634"
   pubmed           : # URL
   researchgate     : # URL
   scopus           : # URL
@@ -145,6 +145,8 @@ social:
   links: # An array of links to social media profiles
     - "https://scholar.google.com/citations?user=raOG4TkAAAAJ&hl=en&oi=ao"
     - "https://orcid.org/0009-0009-3836-2676"
+    - "https://dblp.org/pid/377/0041.html"
+    - "https://www.semanticscholar.org/author/Moonseong-Jeong/2254362634"
     - "https://www.linkedin.com/in/bronsonj98"
     - "https://github.com/bronsonj98"
 

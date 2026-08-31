@@ -2,13 +2,14 @@
 permalink: /
 layout: home-modern
 title: "Moonseong Jeong"
-description: "Moonseong (Bronson) Jeong is a computational genomics and biomedical machine learning researcher at UCLA who develops scalable methods for genetic discovery, 3D medical imaging, and governed clinical data."
+description: "Moonseong Jeong, also known as Bronson Jeong, is a computational genomics and biomedical machine learning researcher at UCLA who develops scalable methods for genetic discovery, 3D medical imaging, and governed clinical data."
+last_modified_at: 2026-08-31
 author_profile: false
 redirect_from: 
   - /about/
   - /about.html
 profile_statement: >-
-  Moonseong (Bronson) Jeong is a computational genomics and biomedical machine learning researcher at UCLA. He develops scalable, interpretable methods for genetic discovery, 3D medical imaging, and governed clinical data, with an emphasis on approaches that reduce reliance on raw patient-level data and repeated large-scale model training.
+  Moonseong Jeong, also known as Bronson Jeong, is a computational genomics and biomedical machine learning researcher at UCLA. He develops scalable, interpretable methods for genetic discovery, 3D medical imaging, and governed clinical data, with an emphasis on approaches that reduce reliance on raw patient-level data and repeated large-scale model training.
 research_areas:
   - label: "Statistical genetics"
     title: "Summary-statistics inference at biobank scale"
@@ -24,7 +25,7 @@ research_areas:
     text: "A current research direction connects quantitative retinal imaging traits with scalable genetic inference to study ocular disease."
 ---
 
-Moonseong (Bronson) Jeong is a PhD candidate in Computer Science at UCLA, advised by Prof. [Sriram Sankararaman](http://web.cs.ucla.edu/~sriram/). His research sits at the interface of machine learning, statistics, and biomedicine, with a focus on scalable and reproducible methods for understanding the genetic basis of complex traits and diseases.
+Moonseong Jeong, also known as Bronson Jeong, is a PhD candidate in Computer Science at UCLA, advised by Prof. [Sriram Sankararaman](http://web.cs.ucla.edu/~sriram/). His research sits at the interface of machine learning, statistics, and biomedicine, with a focus on scalable and reproducible methods for understanding the genetic basis of complex traits and diseases.
 
 Moonseong earned an MS in Computer Science from UCLA in 2025 and previously completed a BS in Mathematics of Computation and a BA in Physics at UCLA. As an undergraduate, he worked on astronomical spectroscopy with Prof. [Alice Shapley](https://www.astro.ucla.edu/~aes/). That training continues to shape his approach to biomedical inference: careful modeling under noise, confounding, and limited observability.
 

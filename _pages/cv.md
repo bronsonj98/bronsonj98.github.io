@@ -3,6 +3,7 @@ layout: archive
 title: "CV"
 permalink: /cv/
 description: "Curriculum vitae and research profile for Moonseong (Bronson) Jeong, a UCLA Computer Science PhD candidate working in computational genomics and biomedical machine learning."
+last_modified_at: 2026-08-31
 author_profile: false
 redirect_from:
   - /resume
@@ -43,4 +44,4 @@ Ad hoc and invited reviewer for *Cell Genomics*, *Nature Communications*, *Bioin
 
 ## Contact and Profiles
 
-[Email](mailto:bronsonj@cs.ucla.edu) · [Google Scholar](https://scholar.google.com/citations?user=raOG4TkAAAAJ&hl=en) · [ORCID](https://orcid.org/0009-0009-3836-2676) · [GitHub](https://github.com/bronsonj98)
+[Email](mailto:bronsonj@cs.ucla.edu) · [Google Scholar](https://scholar.google.com/citations?user=raOG4TkAAAAJ&hl=en) · [ORCID](https://orcid.org/0009-0009-3836-2676) · [DBLP](https://dblp.org/pid/377/0041.html) · [Semantic Scholar](https://www.semanticscholar.org/author/Moonseong-Jeong/2254362634) · [LinkedIn](https://www.linkedin.com/in/bronsonj98) · [GitHub](https://github.com/bronsonj98)
