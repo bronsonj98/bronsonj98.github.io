@@ -3,7 +3,7 @@ permalink: /
 layout: home-modern
 title: "Moonseong Jeong"
 description: "Moonseong Jeong, also known as Bronson Jeong, is a computational genomics and biomedical machine learning researcher at UCLA who develops scalable methods for genetic discovery, 3D medical imaging, and governed clinical data."
-last_modified_at: 2026-08-31
+last_modified_at: 2026-08-31T16:42:43-07:00
 author_profile: false
 redirect_from: 
   - /about/
