@@ -179,7 +179,7 @@
 
 .signal-strip {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1px;
   max-width: 1180px;
   margin: 0 auto 34px;
@@ -247,7 +247,7 @@
 
 .research-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
   margin-top: 28px;
 }
@@ -392,8 +392,14 @@
     max-width: 420px;
   }
 
-  .research-grid {
+  .research-grid,
+  .signal-strip {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .signal-strip div:first-child,
+  .signal-strip div:last-child {
+    border-radius: 0;
   }
 }
 

@@ -1,0 +1,166 @@
+% Curriculum vitae of Moonseong (Bronson) Jeong. Build: ~/.local/bin/tectonic cv.tex
+\documentclass[10pt,letterpaper]{article}
+\usepackage[margin=0.72in,top=0.7in,bottom=0.75in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\definecolor{accent}{HTML}{1F7A8C}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\small Moonseong Jeong \,|\, Curriculum Vitae \,|\, Page \thepage\ of \pageref{LastPage} \,|\, Updated November 2026}
+\titleformat{\section}{\large\bfseries\color{accent}}{}{0em}{}[\vspace{-0.45em}\rule{\textwidth}{0.6pt}]
+\titlespacing*{\section}{0pt}{1.1em}{0.5em}
+\setlist[itemize]{leftmargin=1.2em,itemsep=0.15em,topsep=0.25em,parsep=0pt}
+\setlist[enumerate]{leftmargin=1.6em,itemsep=0.3em,topsep=0.25em,parsep=0pt}
+\newcommand{\entry}[4]{\noindent\textbf{#1}\hfill #2\\ {\itshape #3}\hfill #4\par}
+\newcommand{\entryb}[2]{\noindent\textbf{#1}\hfill #2\par}
+\setlength{\parindent}{0pt}
+\begin{document}
+
+\begin{center}
+{\LARGE\bfseries MOONSEONG (BRONSON) JEONG}\\[0.35em]
+Los Angeles, CA \,|\, \href{mailto:bronsonj@cs.ucla.edu}{bronsonj@cs.ucla.edu} \,|\, \href{https://bronsonj98.github.io}{bronsonj98.github.io} \,|\, \href{https://scholar.google.com/citations?user=raOG4TkAAAAJ&hl=en}{Google Scholar} \,|\, \href{https://orcid.org/0009-0009-3836-2676}{ORCID 0009-0009-3836-2676}
+\end{center}
+
+\section{Research Focus}
+Ph.D.\ candidate in Computer Science at UCLA developing scalable statistical and machine-learning methods for genomics, medical imaging, and electronic health records. Current research centers on privacy-preserving summary-statistics methods for genomic inference across genetic ancestries (SUMMIT); the recognition of disease in health records and its consequences for case finding and genetic analysis; compute-efficient analysis of 3D medical images; and secure, interpretable analytics for prescription-monitoring systems. Across these areas, my work emphasizes practical use of sensitive, high-dimensional data under real computational and data-governance constraints.
+
+\section{Education}
+\entryb{University of California, Los Angeles (UCLA)}{Los Angeles, CA}
+\entry{Doctor of Philosophy in Computer Science}{September 2022 -- June 2028 (expected)}{Advisor: Sriram Sankararaman}{}
+\entryb{Master of Science in Computer Science}{March 2025}
+\entryb{Bachelor of Science in Mathematics of Computation; Bachelor of Arts in Physics}{December 2020}
+
+\section{Research Experience}
+\entry{Summary-Statistics Genetics and Privacy-Preserving Biobank Analysis}{September 2022 -- Present}{UCLA; advisor: Sriram Sankararaman}{}
+\begin{itemize}
+\item Developed SUM-RHE, a summary-statistics implementation of randomized Haseman--Elston regression that attains accuracy comparable to individual-level analysis while substantially reducing computational cost and avoiding routine access to individual-level genotype data (\emph{Genome Research}, 2024).
+\item Led SUMMIT, a framework that combines genome-wide LD scores, estimated with random projections, with GWAS summary statistics to estimate genome-wide, annotation-specific, and cross-trait heritability and genetic correlation; in UK Biobank simulations across European, South Asian, and admixed African-European cohorts it was more accurate and less biased than prior methods, with the largest gains outside European ancestry (bioRxiv, 2026; selected for a platform presentation at ASHG 2026).
+\item Built a high-performance Python/C++ pipeline for heritability and genetic-correlation estimation across hundreds of traits and diverse biobank-scale cohorts; extended the framework to multivariate inference, gene--environment interaction, and partitioned genetic architecture, contributing to a 2026 \emph{Genome Research} article (ENGINE), a 2026 medRxiv preprint (REGENA), and a 2025 bioRxiv preprint on rare coding-variant heritability (FLEX).
+\item Applying summary-level inference to retinal OCT biomarkers to study the genetic architecture of age-related macular degeneration across diverse US cohorts in collaboration with Dr.\ Maryam Zekavat (Harvard Medical School), Dr.\ Oren Avram (Optum Labs), and Dr.\ Adrian Au (UCLA Stein Eye Institute).
+\end{itemize}
+
+\entry{Recognition of Disease in Electronic Health Records}{2025 -- Present}{UCLA; advisor: Sriram Sankararaman}{}
+\begin{itemize}
+\item Using UK Biobank participants whose enrollment blood assays were in the disease range for diabetes, chronic kidney disease, or anemia, measured how often disease-range values had no diagnosis or treatment record, how slowly they were recognized in primary-care and hospital records, and how case-finding models trained on recorded diagnoses compare with models trained on the measured assays (ML4H 2026 Proceedings, first author).
+\item Extending this work to the heritability of being diagnosed and its effect on genetic correlations estimated between diagnosis codes (manuscript in preparation).
+\end{itemize}
+
+\entry{Compute-Efficient 3D Medical Imaging and Imaging Genomics}{October 2024 -- Present}{UCLA; advisors: Sriram Sankararaman and Yuzhe Yang}{}
+\begin{itemize}
+\item Co-developed RAPTOR, a train-free framework that uses frozen two-dimensional foundation models and random projections to construct compact representations of three-dimensional medical volumes without training a new volumetric model.
+\item Evaluated RAPTOR across 10 medical-imaging tasks; it achieved the strongest performance among evaluated methods in 7 datasets and processed a full volume in approximately 6.5 seconds on a single 11~GB graphics card (ICML 2025 Spotlight).
+\item Applied volumetric embeddings to UK Biobank brain MRI data, identifying 126 novel genetic associations while replicating 111 of 118 previously reported image-derived phenotype associations; now extending this work to retinal OCT biomarkers and age-related macular degeneration in governed biobank settings.
+\end{itemize}
+
+\entry{Secure Prescription-Monitoring Analytics in California CURES}{September 2022 -- Present}{UCLA / California Department of Justice Research Center; advisors: Sriram Sankararaman and Siamak Rahman}{}
+\begin{itemize}
+\item Serve as technical lead on an annually renewed, California Department of Justice-approved collaboration involving more than 30 million individuals, approximately 400,000 prescribers, and over 200 million controlled-substance prescriptions.
+\item Built the analysis-ready pipelines, feature-construction workflows, and statistical and machine-learning analyses required to study prescribing patterns under strict privacy, security, and on-premises operational constraints.
+\item Analyzed geographic, demographic, specialty, product, and policy-related variation in controlled-substance exposure and developed interpretable monitoring outputs; preliminary findings were presented at the International Association for the Study of Pain in 2024, and a manuscript is in preparation.
+\end{itemize}
+
+\entry{Electronic Health Record Modeling and Clinical Prediction}{June 2023 -- February 2025}{UCLA; advisors: Sriram Sankararaman and Jeffrey Chiang}{}
+\begin{itemize}
+\item Co-developed DK-BEHRT, which incorporates disease-description embeddings from biomedical language models into a BERT-based architecture for electronic health records, yielding improvements of up to 62\% in AUPR and 21\% in AUROC over baseline models (AAAI Bridge Program on AI for Medicine and Healthcare, 2025).
+\item Developed a model combining electronic health record and census information to predict patient demographic features (AUROC 0.89) and performed ablation studies to quantify the contribution of each feature group.
+\end{itemize}
+
+\entry{Coalescent Limits of Local Ancestry Inference}{July 2022 -- Present}{Joint project with Xinzhu (April) Wei, Cornell University}{}
+\begin{itemize}
+\item Derived a coalescent-theoretic framework for when reference-based local ancestry inference is reliable, as a function of admixture timing relative to source divergence, reference-panel size, proxy references, linkage along the genome, and gene flow.
+\item Implemented the framework in C++, MATLAB, and Python; validated it against coalescent simulations and existing local ancestry software; presented the work at the Cold Spring Harbor Probabilistic Modeling in Genomics meeting in 2023; manuscript in preparation.
+\end{itemize}
+
+\entry{MOSDEF Survey: High-Redshift Galaxy Spectroscopy}{June 2018 -- September 2020}{UCLA Physics and Astronomy; advisor: Alice Shapley}{}
+\begin{itemize}
+\item Applied Monte Carlo methods, Gaussian mixture models, and emission-line analysis to characterize neon emission in high-redshift galaxies, resulting in a first-authored paper in \emph{The Astrophysical Journal Letters}.
+\end{itemize}
+
+\section{Publications}
+\textbf{Peer-Reviewed Journal Articles}
+\begin{enumerate}
+\item Liu, Z., Ramteke, A., Anand, A., Gorla, A., \textbf{Jeong, M.}, and Sankararaman, S. ``A biobank-scale method for learning modulators of gene-environment interaction underlying human complex traits from multiple environmental exposures.'' \emph{Genome Research} (advance online publication), 2026. DOI: \href{https://doi.org/10.1101/gr.282105.126}{10.1101/gr.282105.126}.
+\item \textbf{Jeong, M.}, Pazokitoroudi, A., Liu, Z., and Sankararaman, S. ``Scalable summary-statistics-based heritability estimation method with individual genotype level accuracy.'' \emph{Genome Research} 34(9):1286--1293, 2024. DOI: \href{https://doi.org/10.1101/gr.279207.124}{10.1101/gr.279207.124}.
+\item \textbf{Jeong, M.}, Shapley, A. E., Sanders, R. L., et al. ``The MOSDEF Survey: Neon as a Probe of ISM Physical Conditions at High Redshift.'' \emph{The Astrophysical Journal Letters} 902:L16, 2020. DOI: \href{https://doi.org/10.3847/2041-8213/abba7a}{10.3847/2041-8213/abba7a}.
+\end{enumerate}
+
+\textbf{Peer-Reviewed Conference and Proceedings Papers}
+\begin{enumerate}[resume]
+\item \textbf{Jeong, M.}, Anand, P., Lee, S. A., Han, S., Liu, Z., and Sankararaman, S. ``The Label Is Not the Disease: Recognition Delay in Diagnosis Codes and Its Cost to EHR Case Finding.'' \emph{Proceedings of the Machine Learning for Health Symposium (ML4H 2026)}, PMLR 346, 2026 (accepted; to appear). Code: \href{https://github.com/bronsonj98/recognition-delay}{github.com/bronsonj98/recognition-delay}.
+\item An, U.*, \textbf{Jeong, M.*}, Lee, S. A., Gorla, A., Yang, Y., and Sankararaman, S. ``RAPTOR: Scalable Train-Free Embeddings for 3D Medical Volumes Leveraging Pretrained 2D Foundation Models.'' \emph{Proceedings of the 42nd International Conference on Machine Learning}, PMLR 267:1462--1482, 2025. \href{https://proceedings.mlr.press/v267/an25a.html}{[link]} Spotlight paper (top 2.6\% of submissions); *equal contribution.
+\item An, U.*, \textbf{Jeong, M.*}, Lee, S. A., Gorla, A., and Sankararaman, S. ``Train-free unsupervised volumetric embeddings using image foundation models enable improved predictions and genomic discoveries.'' RECOMB-Genetics, 2025. *Equal contribution.
+\item An, U., Lee, S. A., \textbf{Jeong, M.}, Gorla, A., Chiang, J. N., and Sankararaman, S. ``DK-BEHRT: Teaching Language Models International Classification of Disease (ICD) Codes Using Known Disease Descriptions.'' \emph{Proceedings of the First AAAI Bridge Program on AI for Medicine and Healthcare}, PMLR 281:133--143, 2025. \href{https://proceedings.mlr.press/v281/an25a.html}{[link]}
+\end{enumerate}
+
+\textbf{Preprints}
+\begin{enumerate}[resume]
+\item \textbf{Jeong, M.}, Liu, Z., Ni, J., An, U., Han, S., Anand, A., Anand, P., Boffelli, M., and Sankararaman, S. ``Genome-wide LD scores enable robust heritability and genetic correlation estimation from summary statistics across genetic ancestries.'' bioRxiv, 2026. DOI: \href{https://doi.org/10.64898/2026.10.20.760508}{10.64898/2026.10.20.760508}. Software: \href{https://github.com/sriramlab/SUMMIT}{github.com/sriramlab/SUMMIT}.
+\item Liu, Z., Anand, A., Qie, X., Costantino, M., \textbf{Jeong, M.}, Gorla, A., Zaitlen, N., Dahl, A., and Sankararaman, S. ``Disentangling phenotype scale, amplification, and effect heterogeneity underlying polygenic GxE architecture of complex traits.'' medRxiv, 2026. DOI: \href{https://doi.org/10.64898/2026.10.15.26365681}{10.64898/2026.10.15.26365681}.
+\item Liu, Z., Fu, B., \textbf{Jeong, M.}, Anand, P., Anand, A., Jang, S.-K., Gorla, A., Zhu, J., Pajukanta, P., Palamara, P. F., Zaitlen, N., Border, R., and Sankararaman, S. ``Comprehensive gene heritability estimation reveals the genetic architecture of rare coding variants underlying complex traits.'' bioRxiv, 2025. DOI: \href{https://doi.org/10.1101/2025.10.07.681018}{10.1101/2025.10.07.681018}.
+\end{enumerate}
+
+\textbf{Manuscripts in Preparation}
+\begin{enumerate}[resume]
+\item \textbf{Jeong, M.} and Sankararaman, S. ``Joint estimation of gene-by-context covariance across many exposures in biobanks.''
+\item \textbf{Jeong, M.}, et al., and Sankararaman, S. ``Being diagnosed is heritable and inflates genetic correlations between diseases.''
+\item \textbf{Jeong, M.}, Sankararaman, S., and Wei, X. ``Coalescent limits on the accuracy of reference-based local ancestry inference.''
+\item \textbf{Jeong, M.}, Chiu, A. M., An, U., Avram, O., Zekavat, S., and Sankararaman, S. ``Heritability analysis of automatically extracted OCT biomarkers in the UK Biobank.''
+\item \textbf{Jeong, M.}, Fu, B., Rahman, S., and Sankararaman, S. ``Describing California's controlled opioid prescription landscape with the CURES Dataset: Descriptive statistics and machine-learning explorations.''
+\item An, U., Gorla, A., \textbf{Jeong, M.}, and Sankararaman, S. ``Gaussian process-based neural topic model for series-specific topic dynamics in time series datasets.''
+\end{enumerate}
+
+\section{Selected Conference Presentations}
+\textbf{Oral presentations}
+\begin{itemize}
+\item ``Genome-wide LD scores allow robust heritability and genetic correlation from summary statistics across ancestries,'' American Society of Human Genetics (ASHG) 2026 Annual Meeting, platform session ``From Labels to Landscapes: Leveraging Local Ancestry and the Ancestry Continuum to Maximize Cross-Ancestry Association,'' Montr\'eal, October 22, 2026.
+\item ``Train-free unsupervised volumetric embeddings using image foundation models enable improved predictions and genomic discoveries,'' RECOMB-Genetics, Seoul, 2025.
+\item ``Scalable summary-statistics-based heritability estimation method with individual genotype level accuracy,'' RECOMB, Boston, 2024.
+\end{itemize}
+\textbf{Poster presentations}
+\begin{itemize}
+\item ``The Label Is Not the Disease: Recognition Delay in Diagnosis Codes and Its Cost to EHR Case Finding,'' Machine Learning for Health (ML4H) Symposium, Sydney, December 2026 (forthcoming).
+\item ``RAPTOR: Scalable Train-Free Embeddings for 3D Medical Volumes Leveraging Pretrained 2D Foundation Models,'' ICML Spotlight, Vancouver, 2025.
+\item ``DK-BEHRT: Teaching Language Models International Classification of Disease Codes Using Known Disease Descriptions,'' AAAI Bridge Program on AI for Medicine and Healthcare, Philadelphia, 2025.
+\item ``Epidemiology of Continuous Opioid Use in California Over the Past Decade,'' International Association for the Study of Pain, Amsterdam, 2024.
+\item ``Scalable summary-statistics-based heritability estimation method with individual genotype level accuracy,'' American Society of Human Genetics, Washington, DC, 2023.
+\item ``The theoretical limit of local ancestry inference,'' Cold Spring Harbor Probabilistic Modeling in Genomics, Cold Spring Harbor, NY, 2023.
+\end{itemize}
+
+\section{Peer Review and Professional Service}
+Ad hoc and invited reviewer for \emph{Cell Genomics}, \emph{Nature Communications}, \emph{Bioinformatics}, \emph{BMC Genomics}, and RECOMB 2026.
+
+\section{Teaching Experience}
+\entryb{Teaching Assistant, UCLA Computer Science}{2023 -- Present}
+\begin{itemize}
+\item C121/C221: Probabilistic Models in Computational Genomics (Fall 2026).
+\item CS31: Introduction to Computer Science I (Fall 2025).
+\item M146: Introduction to Machine Learning (Winter 2024 and Winter 2025).
+\item CM124/224: Machine Learning Applications in Genetics (Fall 2023).
+\end{itemize}
+
+\section{Awards and Honors}
+\entryb{Platform (oral) presentation, ASHG 2026 Annual Meeting}{2026}
+\begin{itemize}
+\item Abstract selected for an oral presentation in a platform session of the American Society of Human Genetics Annual Meeting, Montr\'eal.
+\end{itemize}
+\entryb{ICML Spotlight selection for RAPTOR}{2025}
+\begin{itemize}
+\item Selected as a Spotlight paper (top 2.6\% of submissions).
+\end{itemize}
+\entryb{UCLA Computer Science Departmental Fellowship}{2022 -- Present}
+\entryb{UCLA Dean's Honors List}{Winter 2019; Spring 2020}
+
+\section{Technical Expertise}
+\textbf{Programming and systems:} Python, C++, Bash, SQL, MATLAB, and R; PyTorch and TensorFlow; high-performance computing and Slurm; large-scale experimentation, profiling, and performance optimization.\\
+\textbf{Research methods:} statistical genetics, variance-component estimation, genome-wide association analysis, gene--environment interaction, biobank-scale computation, machine learning, three-dimensional medical-image analysis, electronic health record modeling, and secure on-premises health-data pipelines.
+
+\end{document}

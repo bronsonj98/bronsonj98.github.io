@@ -6,6 +6,7 @@ excerpt: "ENGINE learns interpretable combinations of environmental exposures wh
 date: 2026-08-18
 venue: Genome Research (online ahead of print)
 paperurl: "https://doi.org/10.1101/gr.282105.126"
+codeurl: "https://github.com/sriramlab/ENGINE"
 citation: #
 authors: Liu, Z., Ramteke, A., Anand, A., Gorla, A., <u>Jeong, M.</u>, and Sankararaman, S.
 category: manuscripts

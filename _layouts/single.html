@@ -56,7 +56,9 @@ layout: default
         {{ content }}
 
         {% if page.collection == 'publications' and page.paperurl and page.paperurl != '#' %}
-          <p><a href="{{ page.paperurl }}" class="btn btn--primary" target="_blank" rel="noopener">View paper</a></p>
+          <p><a href="{{ page.paperurl }}" class="btn btn--primary" target="_blank" rel="noopener">View paper</a>{% if page.codeurl %} <a href="{{ page.codeurl }}" class="btn btn--inverse" target="_blank" rel="noopener">Code</a>{% endif %}</p>
+        {% elsif page.collection == 'publications' and page.codeurl %}
+          <p><a href="{{ page.codeurl }}" class="btn btn--inverse" target="_blank" rel="noopener">Code</a></p>
         {% endif %}
 
         {% if page.citation and page.paperurl and page.slidesurl and page.bibtexurl %}

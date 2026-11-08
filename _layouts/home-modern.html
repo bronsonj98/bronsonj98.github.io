@@ -59,6 +59,10 @@ layout: default
       <span>foundation-model embeddings for 3D medical volumes</span>
     </div>
     <div>
+      <strong>ASHG 2026 platform talk</strong>
+      <span>genome-wide LD scores for heritability and genetic correlation across ancestries</span>
+    </div>
+    <div>
       <strong>2 Genome Research papers</strong>
       <span>biobank-scale statistical genetics and gene–environment interaction</span>
     </div>
@@ -116,6 +120,9 @@ layout: default
               <a href="{{ base_path }}{{ post.url }}">Details</a>
               {% if post.paperurl and post.paperurl != "#" %}
                 <a href="{{ post.paperurl }}" target="_blank" rel="noopener">Paper</a>
+              {% endif %}
+              {% if post.codeurl %}
+                <a href="{{ post.codeurl }}" target="_blank" rel="noopener">Code</a>
               {% endif %}
               {% if post.note %}
                 <span>{{ post.note }}</span>

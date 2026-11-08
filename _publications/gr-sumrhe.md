@@ -5,6 +5,7 @@ excerpt: "A scalable method for estimating SNP heritability from GWAS summary st
 date: 2024-09-01
 venue: Genome Research
 paperurl: "https://doi.org/10.1101/gr.279207.124"
+codeurl: "https://github.com/sriramlab/SUMRHE"
 citation: #
 authors: <u>Jeong, M.</u>, Pazokitoroudi, A., Liu, Z., and Sankararaman, S.
 category: manuscripts

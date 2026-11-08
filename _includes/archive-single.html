@@ -15,6 +15,9 @@
       {% if post.paperurl and post.paperurl != "#" %}
         <a href="{{ post.paperurl }}" target="_blank" rel="noopener">Paper</a>
       {% endif %}
+      {% if post.codeurl %}
+        <a href="{{ post.codeurl }}" target="_blank" rel="noopener">Code</a>
+      {% endif %}
     </p>
 
     {% if post.note %}
