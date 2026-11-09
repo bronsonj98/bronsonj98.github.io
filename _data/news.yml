@@ -1,3 +1,6 @@
+- key: "2026-10-26a"
+  date: 2026-10-26
+  text: "[MedJev](/publication/preprint-medjev), an evaluation of a laptop-scale medical language model as a zero-shot decision maker, is on arXiv with Simon Lee and Jeffrey Chiang's group."
 - key: "2026-10-22c"
   date: 2026-10-22
   text: "Platform (oral) presentation at the [ASHG 2026 Annual Meeting](/talks/2026-10-22-ashg-platform) in Montréal on SUMMIT and genome-wide LD scores for heritability and genetic correlation across ancestries."
@@ -10,6 +13,9 @@
 - key: "2026-10-20a"
   date: 2026-10-20
   text: "The REGENA preprint on [phenotype scale, amplification, and effect heterogeneity in polygenic GxE](/publication/preprint-regena) is on medRxiv."
+- key: "2026-10-09a"
+  date: 2026-10-09
+  text: "A single-cell and biobank study of the transcription factor SREBF1 in human fat tissue, with the Pajukanta lab, is published in [Genome Medicine](/publication/gm-srebf1)."
 - key: "2026-09-24a"
   date: 2026-09-24
   text: "Teaching assistant for [C121/C221, Probabilistic Models in Computational Genomics](/teaching/2026-fall-teaching), UCLA, Fall 2026."
