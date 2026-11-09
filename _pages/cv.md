@@ -13,7 +13,7 @@ redirect_from:
 ## Education
 
 **University of California, Los Angeles**<br>
-PhD in Computer Science, September 2022 to present, expected June 2028. Advisor: Sriram Sankararaman.<br>
+PhD in Computer Science, September 2022 to present, expected June 2028. Advisor: [Sriram Sankararaman](http://web.cs.ucla.edu/~sriram/).<br>
 MS in Computer Science, March 2025.<br>
 BS in Mathematics of Computation and BA in Physics, December 2020.
 

@@ -15,7 +15,7 @@ intro: "Peer-reviewed papers and public preprints first, then manuscripts under 
         {% for post in items %}
           <article class="pub">
             <a class="pub__title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
-            <p class="pub__authors">{{ post.authors | replace: "<u>", "<strong>" | replace: "</u>", "</strong>" }}</p>
+            <p class="pub__authors">{% include authors.html text=post.authors %}</p>
             <p class="pub__venue"><em>{{ post.venue }}</em>{% unless category[0] == "inprep" %}, {{ post.date | date: "%Y" }}{% endunless %}{% if post.paperurl and post.paperurl != "#" %} · <a href="{{ post.paperurl }}">{% if category[0] == "preprints" %}preprint{% else %}paper{% endif %}</a>{% endif %}{% if post.codeurl %} · <a href="{{ post.codeurl }}">code</a>{% endif %}{% if post.note %} · {{ post.note }}{% endif %}</p>
           </article>
         {% endfor %}

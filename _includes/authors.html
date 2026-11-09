@@ -1,0 +1,1 @@
+{% assign a = include.text | replace: "<u>", "<strong>" | replace: "</u>", "</strong>" %}{% for p in site.data.people %}{% capture link %}<a class="person{% if p.visible %} person--vis{% endif %}" href="{{ p.url }}">{{ p.name }}</a>{% endcapture %}{% assign a = a | replace: p.name, link %}{% endfor %}{{ a }}

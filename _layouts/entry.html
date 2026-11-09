@@ -14,7 +14,7 @@ layout: site
     {% else %}{{ page.type }}{% endif %}
   </p>
   <h1 class="entry__title">{{ page.title }}</h1>
-  {% if page.authors %}<p class="entry__authors">{{ page.authors | replace: "<u>", "<strong>" | replace: "</u>", "</strong>" }}</p>{% endif %}
+  {% if page.authors %}<p class="entry__authors">{% include authors.html text=page.authors %}</p>{% endif %}
   <p class="entry__meta">{% if page.venue %}<em>{{ page.venue }}</em>{% endif %}{% if page.location %} · {{ page.location }}{% endif %}{% if page.date %}{% if kind == "publications" %}{% unless page.category == "inprep" %}, {{ page.date | date: "%Y" }}{% endunless %}{% else %} · {{ page.date | date: "%B %Y" }}{% endif %}{% endif %}</p>
   {% assign has_paper = false %}{% if page.paperurl and page.paperurl != "#" %}{% assign has_paper = true %}{% endif %}
   {% if has_paper or page.codeurl %}

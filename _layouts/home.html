@@ -39,7 +39,7 @@ layout: site
           {% endif %}
           <div class="feat__body">
             <a class="feat__title" href="{{ pub.url | relative_url }}">{{ pub.title }}</a>
-            <p class="feat__meta">{{ pub.authors | replace: "<u>", "<strong>" | replace: "</u>", "</strong>" }} · {{ pub.venue }}, {{ pub.date | date: "%Y" }}{% if pub.paperurl and pub.paperurl != "#" %} · <a href="{{ pub.paperurl }}">paper</a>{% endif %}{% if pub.codeurl %} · <a href="{{ pub.codeurl }}">code</a>{% endif %}</p>
+            <p class="feat__meta">{% include authors.html text=pub.authors %} · {{ pub.venue }}, {{ pub.date | date: "%Y" }}{% if pub.paperurl and pub.paperurl != "#" %} · <a href="{{ pub.paperurl }}">paper</a>{% endif %}{% if pub.codeurl %} · <a href="{{ pub.codeurl }}">code</a>{% endif %}</p>
             {% if pub.summary %}<p class="feat__sum">{{ pub.summary }}</p>{% endif %}
           </div>
         </article>
