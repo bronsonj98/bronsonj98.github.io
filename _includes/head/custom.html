@@ -75,7 +75,7 @@
   "@type": "ScholarlyArticle",
   "headline": {{ page.title | jsonify }},
   "url": {{ site.url | append: site.baseurl | append: page.url | jsonify }},
-  {% unless page.publication_status == "in-preparation" %}"datePublished": {{ page.date | date: "%Y-%m-%d" | jsonify }},{% endunless %}
+  {% unless page.category == "inprep" %}"datePublished": {{ page.date | date: "%Y-%m-%d" | jsonify }},{% endunless %}
   {% if page.paperurl and page.paperurl != "#" %}"sameAs": {{ page.paperurl | jsonify }},{% endif %}
   {% if page.excerpt %}"description": {{ page.excerpt | markdownify | strip_html | strip_newlines | jsonify }},{% endif %}
   "author": {

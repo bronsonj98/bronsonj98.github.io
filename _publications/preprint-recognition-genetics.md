@@ -7,7 +7,7 @@ date: 2026-10-27
 venue: Manuscript in preparation
 paperurl: #
 citation: #
-authors: <u>Jeong, M.</u>, …, and Sankararaman, S.
-category: preprints
+authors: <u>Jeong, M.</u> and Sankararaman, S.
+category: inprep
 publication_status: in-preparation
 ---

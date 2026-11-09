@@ -51,6 +51,10 @@ BS in Mathematics of Computation and BA in Physics, December 2020
 - "Scalable summary statistics-based heritability estimation with individual data accuracy," ASHG 2023, Washington, DC, November 2023.
 - "The theoretical limit of local ancestry inference," CSHL Probabilistic Modeling in Genomics, Cold Spring Harbor, NY, March 2023.
 
+**Co-authored presentations**
+
+- "Comprehensive gene heritability estimation reveals the genetic architecture of rare coding variants underlying complex traits," RECOMB-Genetics 2026, Thessaloniki, May 2026 (presented by first author Zhengtong Liu).
+
 See the [Talks](/talks/) page for the full list.
 
 ## Teaching
@@ -59,7 +63,7 @@ Teaching assistant, UCLA Computer Science, since September 2023: C121/C221 Proba
 
 ## Professional Service
 
-Ad hoc and invited reviewer for *Cell Genomics*, *Nature Communications*, *Bioinformatics*, *BMC Genomics*, and RECOMB 2026.
+Ad hoc and invited reviewer for *Cell Genomics*, *Nature Communications*, *Bioinformatics*, *BMC Genomics*, RECOMB 2026, ML4H 2026, and ICLR 2027.
 
 ## Technical Expertise
 

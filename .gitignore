@@ -11,3 +11,6 @@ Gemfile.lock
 # Ingore files created by npm
 node_modules
 package-lock.json
+cv_src/cv.pdf
+cv_src/*.aux
+cv_src/*.log

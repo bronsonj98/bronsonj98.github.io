@@ -23,5 +23,8 @@ main:
   - title: "Teaching"
     url: /teaching/    
 
+  - title: "News"
+    url: /news/
+
   - title: "CV"
     url: /cv/
