@@ -9,7 +9,7 @@ redirect_from:
   - /about.html
 subtitle: "Bronson Jeong · 정문성 · PhD candidate in Computer Science, UCLA"
 lead: "I build statistical and machine-learning methods for human genetics, medical imaging, and health records that still work when patient data cannot leave an institution and computing is limited."
-bio: "I am advised by <a href=\"http://web.cs.ucla.edu/~sriram/\">Sriram Sankararaman</a> and work where statistics, machine learning, and human genetics meet. My current work uses the All of Us Research Program, the UCLA ATLAS biobank, and California's prescription-monitoring data."
+bio: "I am advised by <a href=\"http://web.cs.ucla.edu/~sriram/\">Sriram Sankararaman</a> and work where statistics, machine learning, and human genetics meet. My current work uses the <a class=\"person\" href=\"https://www.researchallofus.org/\">All of Us Research Program</a>, the <a class=\"person\" href=\"https://www.uclahealth.org/precision-health/atlas\">UCLA ATLAS biobank</a>, and <a class=\"person\" href=\"https://oag.ca.gov/cures\">California's prescription-monitoring data</a>."
 links:
   - title: "bronsonj@cs.ucla.edu"
     url: "mailto:bronsonj@cs.ucla.edu"
