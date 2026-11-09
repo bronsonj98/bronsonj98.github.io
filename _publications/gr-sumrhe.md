@@ -1,5 +1,5 @@
 ---
-title: "Scalable summary statistics-based heritability estimation method with individual genotype level accuracy."
+title: "Scalable summary statistics-based heritability estimation method with individual genotype level accuracy"
 collection: publications
 excerpt: "A scalable method for estimating SNP heritability from GWAS summary statistics with accuracy comparable to analyses of individual-level genotypes."
 date: 2024-09-01

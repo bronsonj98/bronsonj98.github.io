@@ -7,7 +7,7 @@ date: 2025-03-01
 venue: Manuscript in preparation
 paperurl: #
 citation: #
-authors: <u>Jeong, M.</u>, Chiu, A. M., An, U., Avram, O., Zekavat S., and Sankararaman S.
+authors: <u>Jeong, M.</u>, Chiu, A. M., An, U., Avram, O., Zekavat, S., and Sankararaman, S.
 category: inprep
 publication_status: in-preparation
 ---

@@ -1,32 +1,48 @@
-- date: 2026-10-22
+- key: "2026-10-22c"
+  date: 2026-10-22
   text: "Platform (oral) presentation at the [ASHG 2026 Annual Meeting](/talks/2026-10-22-ashg-platform) in Montréal on SUMMIT and genome-wide LD scores for heritability and genetic correlation across ancestries."
-- date: 2026-10-22
+- key: "2026-10-22b"
+  date: 2026-10-22
   text: "The SUMMIT preprint, [Genome-wide LD scores enable robust heritability and genetic correlation estimation from summary statistics across genetic ancestries](/publication/preprint-summit), is on bioRxiv."
-- date: 2026-10-22
+- key: "2026-10-22a"
+  date: 2026-10-22
   text: "[The Label Is Not the Disease](/publication/ml4h-recognition-delay), on recognition delay in diagnosis codes and its cost to EHR case finding, is accepted to the ML4H 2026 Proceedings."
-- date: 2026-10-20
+- key: "2026-10-20a"
+  date: 2026-10-20
   text: "The REGENA preprint on [phenotype scale, amplification, and effect heterogeneity in polygenic GxE](/publication/preprint-regena) is on medRxiv."
-- date: 2026-09-24
+- key: "2026-09-24a"
+  date: 2026-09-24
   text: "Teaching assistant for [C121/C221, Probabilistic Models in Computational Genomics](/teaching/2026-fall-teaching), UCLA, Fall 2026."
-- date: 2026-08-18
+- key: "2026-08-18a"
+  date: 2026-08-18
   text: "ENGINE, [a biobank-scale method for learning modulators of gene-environment interaction](/publication/gr-engine), is published in Genome Research."
-- date: 2026-05-25
+- key: "2026-05-25a"
+  date: 2026-05-25
   text: "FLEX, on [gene-level heritability of rare coding variants](/publication/preprint-flex), was presented at RECOMB-Genetics 2026 in Thessaloniki by first author Zhengtong Liu."
-- date: 2026-03-16
+- key: "2026-03-16a"
+  date: 2026-03-16
   text: "The ENGINE preprint on learning modulators of gene-environment interaction from multiple exposures is on bioRxiv."
-- date: 2025-10-08
+- key: "2025-10-08a"
+  date: 2025-10-08
   text: "The FLEX preprint on [comprehensive gene heritability estimation of rare coding variants](/publication/preprint-flex) is on bioRxiv."
-- date: 2025-10-01
+- key: "2025-10-01a"
+  date: 2025-10-01
   text: "Teaching assistant for CS31, Introduction to Computer Science I, UCLA, Fall 2025."
-- date: 2025-07-15
+- key: "2025-07-15a"
+  date: 2025-07-15
   text: "[RAPTOR](/publication/icml-raptor) presented as a Spotlight paper (top 2.6% of submissions) at ICML 2025 in Vancouver."
-- date: 2025-04-25
+- key: "2025-04-25a"
+  date: 2025-04-25
   text: "Oral presentation on [train-free volumetric embeddings](/publication/recomb-raptor) at RECOMB-Genetics 2025 in Seoul."
-- date: 2025-03-21
+- key: "2025-03-21a"
+  date: 2025-03-21
   text: "MS in Computer Science, UCLA."
-- date: 2025-02-25
+- key: "2025-02-25a"
+  date: 2025-02-25
   text: "[DK-BEHRT](/publications/aaai-dkbehrt/) presented at the AAAI Bridge Program on AI for Medicine and Healthcare in Philadelphia."
-- date: 2024-07-22
+- key: "2024-07-22a"
+  date: 2024-07-22
   text: "[SUM-RHE](/publications/gr-sumrhe/), scalable summary-statistics heritability estimation with individual-genotype-level accuracy, is published in Genome Research."
-- date: 2024-05-01
+- key: "2024-05-01a"
+  date: 2024-05-01
   text: "Oral presentation on summary-statistics heritability estimation at RECOMB 2024 in Boston."

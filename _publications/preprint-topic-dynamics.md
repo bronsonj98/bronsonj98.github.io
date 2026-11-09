@@ -1,5 +1,5 @@
 ---
-title: "Gaussian process-based neural topic model for series-specific topic dynamics in time series datasets."
+title: "Gaussian process-based neural topic model for series-specific topic dynamics in time series datasets"
 collection: publications
 permalink: /publication/preprint-topic-dynamics
 excerpt: "A Gaussian process-based neural topic model for learning series-specific changes in latent topic structure across time-series datasets."

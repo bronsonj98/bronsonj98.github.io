@@ -1,5 +1,5 @@
 ---
-title: "DK-BEHRT: Teaching Language Models International Classification of Disease (ICD) Codes using Known Disease Descriptions."
+title: "DK-BEHRT: Teaching Language Models International Classification of Disease (ICD) Codes using Known Disease Descriptions"
 collection: publications
 excerpt: "A language-model architecture that incorporates biomedical disease-description embeddings into longitudinal EHR models, improving AUPR by up to 62% and AUROC by up to 21% over baseline models."
 date: 2025-02-01

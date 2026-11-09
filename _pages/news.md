@@ -6,7 +6,7 @@ description: "Research news and updates from Moonseong (Bronson) Jeong: preprint
 author_profile: false
 ---
 
-{% assign news_items = site.data.news | sort: "date" | reverse %}
+{% assign news_items = site.data.news | sort: "key" | reverse %}
 <div class="news-list news-list--page">
 {% for item in news_items %}
   <article class="news-item">
