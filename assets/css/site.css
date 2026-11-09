@@ -60,20 +60,19 @@ em { font-style: italic; }
 .theme h3 { font-size: 19px; font-weight: 600; line-height: 1.3; }
 .theme p { font-size: 15.5px; color: var(--body); line-height: 1.62; }
 
-.cols { display: grid; grid-template-columns: minmax(0, 1.9fr) minmax(0, 1fr); gap: 64px; padding-top: 34px; border-top: 1px solid var(--rule); }
-.cols .block { border-top: 0; padding-top: 0; }
+.cols { display: flex; flex-direction: column; gap: 68px; }
 .feat { display: flex; flex-direction: column; }
-.feat__row { display: grid; grid-template-columns: 216px minmax(0, 1fr); gap: 26px; padding: 20px 0; border-top: 1px solid var(--rule-light); align-items: start; }
+.feat__row { display: grid; grid-template-columns: 260px minmax(0, 1fr); gap: 32px; padding: 22px 0; border-top: 1px solid var(--rule-light); align-items: start; }
 .feat__row:last-child { border-bottom: 1px solid var(--rule-light); }
-.feat__fig img { width: 216px; height: 144px; object-fit: contain; }
-.feat__body { display: flex; flex-direction: column; gap: 6px; }
+.feat__fig img { width: 260px; height: 173px; object-fit: contain; }
+.feat__body { display: flex; flex-direction: column; gap: 6px; max-width: 760px; }
 .feat__title { font-family: var(--serif); font-size: 21px; line-height: 1.28; color: var(--ink); }
 .feat__meta { font-size: 14.5px; color: var(--body); }
 .feat__meta strong { font-weight: 600; }
 .feat__sum { font-size: 14.5px; color: var(--muted); }
 .more { font-size: 15px; }
 
-.block--side { gap: 40px; }
+.block--side { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 48px; align-items: start; }
 .side { display: flex; flex-direction: column; gap: 14px; }
 .side h2 { font-size: 22px; }
 .side p, .side li { font-size: 14.5px; color: var(--body); }
@@ -131,7 +130,9 @@ em { font-style: italic; }
 
 /* Responsive */
 @media (max-width: 980px) {
-  .cols { grid-template-columns: 1fr; }
+  .block--side { gap: 32px; }
+  .feat__row { grid-template-columns: 216px minmax(0, 1fr); gap: 26px; }
+  .feat__fig img { width: 216px; height: 144px; }
   .hero__photo { width: 220px; height: 275px; }
 }
 @media (max-width: 720px) {
@@ -139,6 +140,8 @@ em { font-style: italic; }
   .main { padding: 32px 16px 40px; gap: 40px; }
   .foot { padding: 16px 16px 48px; }
   .themes { grid-template-columns: 1fr; }
+  .cols { gap: 40px; }
+  .block--side { grid-template-columns: 1fr; gap: 32px; }
   .feat__row { grid-template-columns: 1fr; gap: 12px; }
   .feat__fig img { width: 100%; max-width: 320px; height: auto; }
   .news__item { grid-template-columns: 1fr; gap: 2px; }

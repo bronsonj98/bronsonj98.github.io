@@ -35,7 +35,7 @@ layout: site
       {% for pub in feats %}
         <article class="feat__row">
           {% if pub.figure %}
-            <a class="feat__fig" href="{{ pub.url | relative_url }}" aria-label="{{ pub.title }}"><img src="{{ pub.figure | relative_url }}" alt="{{ pub.figure_alt }}" width="184" height="123" loading="lazy"></a>
+            <a class="feat__fig" href="{{ pub.url | relative_url }}" aria-label="{{ pub.title }}"><img src="{{ pub.figure | relative_url }}" alt="{{ pub.figure_alt }}" width="260" height="173" loading="lazy"></a>
           {% endif %}
           <div class="feat__body">
             <a class="feat__title" href="{{ pub.url | relative_url }}">{{ pub.title }}</a>
