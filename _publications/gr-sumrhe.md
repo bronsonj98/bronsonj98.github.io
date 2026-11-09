@@ -9,4 +9,10 @@ codeurl: "https://github.com/sriramlab/SUMRHE"
 citation: #
 authors: <u>Jeong, M.</u>, Pazokitoroudi, A., Liu, Z., and Sankararaman, S.
 category: manuscripts
+featured: true
+featured_order: 5
+figure: /images/figures/sumrhe.svg
+figure_alt: "Scatter plot of heritability estimated from summary tables against heritability estimated from individual genomes; the points lie on the line of equality."
+figure_caption: "Heritability from summary statistics against heritability from individual genotypes, schematic."
+summary: "Matches the accuracy of analyses that need every participant's genome while using only shared summary statistics."
 ---

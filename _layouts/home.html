@@ -1,0 +1,73 @@
+---
+layout: site
+---
+<section class="hero">
+  <div class="hero__text">
+    <h1 class="hero__name">{{ page.title }}</h1>
+    <p class="hero__sub">{{ page.subtitle }}</p>
+    <p class="hero__lead">{{ page.lead }}</p>
+    <p class="hero__bio">{{ page.bio }}</p>
+    <p class="hero__links">{% for l in page.links %}<a href="{{ l.url }}">{{ l.title }}</a>{% unless forloop.last %} · {% endunless %}{% endfor %}</p>
+  </div>
+  <img class="hero__photo" src="{{ '/images/profile.jpg' | relative_url }}" alt="Moonseong Jeong" width="232" height="290">
+</section>
+
+<section class="block" id="research">
+  <div class="block__head">
+    <h2>Research</h2>
+    <p class="block__note">{{ page.research_note }}</p>
+  </div>
+  <div class="themes">
+    {% for t in page.themes %}
+      <article class="theme">
+        <h3>{{ t.title }}</h3>
+        <p>{{ t.text }}</p>
+      </article>
+    {% endfor %}
+  </div>
+</section>
+
+<div class="cols">
+  <section class="block block--main" id="selected-publications">
+    <div class="block__head"><h2>Selected publications</h2></div>
+    <div class="feat">
+      {% assign feats = site.publications | where: "featured", true | sort: "featured_order" %}
+      {% for pub in feats %}
+        <article class="feat__row">
+          {% if pub.figure %}
+            <a class="feat__fig" href="{{ pub.url | relative_url }}" aria-label="{{ pub.title }}"><img src="{{ pub.figure | relative_url }}" alt="{{ pub.figure_alt }}" width="184" height="123" loading="lazy"></a>
+          {% endif %}
+          <div class="feat__body">
+            <a class="feat__title" href="{{ pub.url | relative_url }}">{{ pub.title }}</a>
+            <p class="feat__meta">{{ pub.authors | replace: "<u>", "<strong>" | replace: "</u>", "</strong>" }} · {{ pub.venue }}, {{ pub.date | date: "%Y" }}{% if pub.paperurl and pub.paperurl != "#" %} · <a href="{{ pub.paperurl }}">paper</a>{% endif %}{% if pub.codeurl %} · <a href="{{ pub.codeurl }}">code</a>{% endif %}</p>
+            {% if pub.summary %}<p class="feat__sum">{{ pub.summary }}</p>{% endif %}
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+    <p class="more"><a href="{{ '/publications/' | relative_url }}">All publications</a>, including preprints and manuscripts under review and in preparation.</p>
+  </section>
+
+  <aside class="block block--side">
+    <section class="side">
+      <h2>News</h2>
+      {% assign news_items = site.data.news | sort: "key" | reverse %}
+      <ul class="side__news">
+        {% for item in news_items limit:4 %}
+          <li><time datetime="{{ item.date }}">{{ item.date | date: "%b %Y" }}</time><span>{{ item.text | markdownify | remove: "<p>" | remove: "</p>" }}</span></li>
+        {% endfor %}
+      </ul>
+      <p class="more"><a href="{{ '/news/' | relative_url }}">All news</a></p>
+    </section>
+    <section class="side">
+      <h2>Honors and service</h2>
+      <ul class="side__list">
+        {% for h in page.honors %}<li>{{ h }}</li>{% endfor %}
+      </ul>
+    </section>
+    <section class="side">
+      <h2>Teaching</h2>
+      <p>{{ page.teaching_note }} <a href="{{ '/teaching/' | relative_url }}">Courses</a></p>
+    </section>
+  </aside>
+</div>

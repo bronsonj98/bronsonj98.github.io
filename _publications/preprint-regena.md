@@ -10,4 +10,7 @@ codeurl: "https://github.com/sriramlab/REGENA"
 citation: #
 authors: Liu, Z., Anand, A., Qie, X., Costantino, M., <u>Jeong, M.</u>, Gorla, A., Zaitlen, N., Dahl, A., and Sankararaman, S.
 category: preprints
+figure: /images/figures/regena.svg
+figure_alt: "Three small scatter plots of per-variant effects in two groups: a scale artefact that disappears after rescaling, amplification where effects are larger in one group, and effect heterogeneity where effects differ."
+figure_caption: "Three readings of a gene-environment interaction signal, schematic."
 ---

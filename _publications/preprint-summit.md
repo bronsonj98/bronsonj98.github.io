@@ -11,4 +11,10 @@ citation: #
 authors: <u>Jeong, M.</u>, Liu, Z., Ni, J., An, U., Han, S., Anand, A., Anand, P., Boffelli, M., and Sankararaman, S.
 category: preprints
 note: "Presented as a platform (oral) talk at the ASHG 2026 Annual Meeting, Montréal"
+featured: true
+featured_order: 1
+figure: /images/figures/summit.svg
+figure_alt: "Two genomes drawn as lines with arcs between correlated variants: a single-ancestry genome has only short arcs, an admixed genome also has long arcs that fall outside the window used by standard LD scores."
+figure_caption: "Standard LD scores sum correlations inside a window. Admixed genomes carry correlation between distant variants, which genome-wide LD scores include."
+summary: "Makes heritability and genetic correlation estimates from shared summary statistics reliable for people of South Asian and African ancestry, where earlier methods were biased."
 ---

@@ -1,27 +1,17 @@
 ---
-layout: archive
+layout: page
 title: "Teaching"
 permalink: /teaching/
-description: "Teaching experience of Moonseong (Bronson) Jeong in machine learning, computational genetics, and computer science at UCLA."
-author_profile: true
+description: "Courses for which Moonseong (Bronson) Jeong has served as a teaching assistant at UCLA."
+intro: "Teaching assistant in UCLA Computer Science since September 2023, in introductory computer science, machine learning, computational genomics, and the application of statistical methods to human genetics."
 ---
-
-{% include base_path %}
-
-<p>Moonseong (Bronson) Jeong has served as a teaching assistant in UCLA Computer Science since September 2023. His teaching spans introductory computer science, foundational machine learning, probabilistic modeling in computational genomics, and the application of computational and statistical methods to human genetics.</p>
-
-<h2>Courses</h2>
-
-{% assign teaching_items = site.teaching | sort: "date" | reverse %}
-{% for post in teaching_items %}
-  <article class="pub-item">
-    <p class="pub-item__title"><strong><a href="{{ post.url | prepend: base_path }}">{{ post.title }}</a></strong></p>
-    <p>
-      {{ post.type }}
-      {% if post.venue %} · <em>{{ post.venue }}</em>{% endif %}
-      {% if post.date %} · {{ post.date | date: "%B %Y" }}{% endif %}
-    </p>
-    {{ post.content | markdownify }}
-    <p class="pub-item__links"><a href="{{ post.url | prepend: base_path }}">Course details</a></p>
-  </article>
-{% endfor %}
+<div class="pubs">
+  {% assign items = site.teaching | sort: "date" | reverse %}
+  {% for post in items %}
+    <article class="pub">
+      <a class="pub__title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <p class="pub__venue">{{ post.type }} · <em>{{ post.venue }}</em> · {{ post.date | date: "%B %Y" }}</p>
+      <div class="pub__desc">{{ post.content | markdownify }}</div>
+    </article>
+  {% endfor %}
+</div>

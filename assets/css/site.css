@@ -1,0 +1,147 @@
+/* Site styles: one serif for headings, one sans for text, near-white ground, one link colour. */
+:root {
+  --ground: #fbfaf7;
+  --ink: #1b1b1b;
+  --body: #3a3a3a;
+  --muted: #5a5a5a;
+  --faint: #8a857b;
+  --rule: #d6d2ca;
+  --rule-light: #e3dfd7;
+  --link: #1f4b8f;
+  --serif: Newsreader, Georgia, "Times New Roman", serif;
+  --sans: Inter, system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  --max: 1080px;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--ground); color: var(--ink); font-family: var(--sans); font-size: 16px; line-height: 1.55; }
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; text-underline-offset: 3px; }
+h1, h2, h3, p, ul, ol, figure { margin: 0; }
+img { max-width: 100%; height: auto; display: block; }
+em { font-style: italic; }
+.skip { position: absolute; left: -999px; top: 0; }
+.skip:focus { left: 16px; top: 8px; background: #fff; padding: 6px 10px; }
+
+/* Header */
+.top { max-width: var(--max); margin: 0 auto; padding: 40px 32px 0; }
+.nav { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 12px 24px; font-size: 14px; }
+.nav__name { font-family: var(--serif); font-size: 20px; color: var(--ink); }
+.nav__links { list-style: none; padding: 0; display: flex; gap: 22px; flex-wrap: wrap; }
+.nav__links a { color: var(--ink); padding-bottom: 2px; }
+.nav__links a[aria-current="page"] { border-bottom: 2px solid var(--ink); }
+
+.main { max-width: var(--max); margin: 0 auto; padding: 44px 32px 56px; display: flex; flex-direction: column; gap: 52px; }
+.foot { max-width: var(--max); margin: 0 auto; padding: 20px 32px 64px; border-top: 1px solid var(--rule); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; font-size: 13px; color: var(--faint); }
+.foot a { color: var(--faint); }
+
+/* Home: hero */
+.hero { display: flex; gap: 48px; align-items: flex-start; flex-wrap: wrap; }
+.hero__text { flex: 1 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 18px; }
+.hero__name { font-family: var(--serif); font-weight: 500; font-size: clamp(34px, 4.2vw, 46px); line-height: 1.1; }
+.hero__sub { color: var(--muted); font-size: 16px; margin-top: -8px; }
+.hero__lead { font-family: var(--serif); font-size: clamp(22px, 2.4vw, 27px); line-height: 1.3; }
+.hero__bio { color: var(--body); max-width: 640px; }
+.hero__links { font-size: 15px; }
+.hero__photo { width: 232px; height: 290px; object-fit: cover; flex: 0 0 auto; }
+
+/* Blocks */
+.block { display: flex; flex-direction: column; gap: 20px; padding-top: 28px; border-top: 1px solid var(--rule); }
+.block__head { display: flex; flex-direction: column; gap: 6px; }
+.block__head h2, .side h2, .page__head h1, .entry__title { font-family: var(--serif); font-weight: 400; }
+.block__head h2 { font-size: 30px; line-height: 1.15; }
+.block__note { color: var(--muted); font-size: 15px; }
+.themes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 30px 44px; }
+.theme { display: flex; flex-direction: column; gap: 8px; padding-top: 14px; border-top: 2px solid var(--ink); }
+.theme h3 { font-size: 18px; font-weight: 600; line-height: 1.3; }
+.theme p { font-size: 15px; color: var(--body); }
+
+.cols { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: 40px; padding-top: 28px; border-top: 1px solid var(--rule); }
+.cols .block { border-top: 0; padding-top: 0; }
+.feat { display: flex; flex-direction: column; }
+.feat__row { display: grid; grid-template-columns: 184px minmax(0, 1fr); gap: 20px; padding: 16px 0; border-top: 1px solid var(--rule-light); }
+.feat__row:last-child { border-bottom: 1px solid var(--rule-light); }
+.feat__fig img { width: 184px; height: 123px; object-fit: contain; }
+.feat__body { display: flex; flex-direction: column; gap: 4px; }
+.feat__title { font-family: var(--serif); font-size: 20px; line-height: 1.25; color: var(--ink); }
+.feat__meta { font-size: 14px; color: var(--body); }
+.feat__meta strong { font-weight: 600; }
+.feat__sum { font-size: 14px; color: var(--muted); }
+.more { font-size: 15px; }
+
+.block--side { gap: 34px; }
+.side { display: flex; flex-direction: column; gap: 12px; }
+.side h2 { font-size: 22px; }
+.side p, .side li { font-size: 14px; color: var(--body); }
+.side__news, .side__list { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.side__news li { display: flex; flex-direction: column; }
+.side__news time { color: var(--faint); }
+
+/* Generic pages */
+.page { display: flex; flex-direction: column; gap: 28px; max-width: 880px; }
+.page__head { display: flex; flex-direction: column; gap: 10px; }
+.page__head h1 { font-weight: 500; font-size: clamp(32px, 3.6vw, 40px); line-height: 1.1; }
+.page__intro { font-size: 15px; color: var(--muted); }
+.page h2 { font-family: var(--serif); font-weight: 400; font-size: 26px; margin-top: 10px; }
+.page p, .page li { color: var(--body); }
+.page ul { padding-left: 1.2em; }
+.page li + li { margin-top: 4px; }
+.page .sec { display: flex; flex-direction: column; gap: 6px; }
+.page .sec-note { font-size: 14px; color: var(--muted); }
+
+/* Publication-style lists (publications, talks, teaching) */
+.pubs { display: flex; flex-direction: column; }
+.pub { display: flex; flex-direction: column; gap: 4px; padding: 16px 0; border-top: 1px solid var(--rule-light); }
+.pub:last-child { border-bottom: 1px solid var(--rule-light); }
+.pub__title { font-family: var(--serif); font-size: 20px; line-height: 1.25; color: var(--ink); }
+.pub__authors { font-size: 14px; color: var(--body); }
+.pub__authors strong { font-weight: 600; }
+.pub__venue { font-size: 13.5px; color: var(--muted); }
+.pub__desc { font-size: 14px; color: var(--body); margin-top: 4px; }
+
+/* News */
+.news { display: flex; flex-direction: column; }
+.news__item { display: grid; grid-template-columns: 140px minmax(0, 1fr); gap: 16px; padding: 12px 0; border-top: 1px solid var(--rule-light); }
+.news__item:last-child { border-bottom: 1px solid var(--rule-light); }
+.news__item time { color: var(--faint); font-size: 14px; }
+.news__item p { color: var(--body); }
+
+/* Entry pages */
+.entry { display: flex; flex-direction: column; gap: 16px; max-width: 880px; }
+.entry__kicker { font-size: 13px; letter-spacing: 0.04em; text-transform: uppercase; color: var(--faint); }
+.entry__title { font-weight: 500; font-size: clamp(26px, 3vw, 34px); line-height: 1.15; }
+.entry__authors { font-size: 15px; color: var(--body); }
+.entry__authors strong { font-weight: 600; }
+.entry__meta { font-size: 15px; color: var(--muted); }
+.entry__links { display: flex; gap: 10px; flex-wrap: wrap; }
+.entry__note { font-size: 14px; color: var(--muted); }
+.entry__fig { max-width: 600px; padding: 12px 0; }
+.entry__fig figcaption { font-size: 13px; color: var(--muted); margin-top: 6px; }
+.entry__body { color: var(--body); max-width: 720px; display: flex; flex-direction: column; gap: 12px; }
+.entry__back { font-size: 14px; }
+
+.btn { display: inline-block; padding: 8px 14px; border: 1px solid var(--ink); border-radius: 4px; color: var(--ink); font-size: 14px; font-weight: 500; }
+.btn:hover { background: var(--ink); color: #fff; text-decoration: none; }
+.btn--quiet { border-color: var(--rule); color: var(--body); }
+.btn--quiet:hover { background: var(--rule-light); color: var(--ink); }
+
+/* Responsive */
+@media (max-width: 980px) {
+  .cols { grid-template-columns: 1fr; }
+  .hero__photo { width: 200px; height: 250px; }
+}
+@media (max-width: 720px) {
+  .top { padding: 28px 16px 0; }
+  .main { padding: 32px 16px 40px; gap: 40px; }
+  .foot { padding: 16px 16px 48px; }
+  .themes { grid-template-columns: 1fr; }
+  .feat__row { grid-template-columns: 1fr; gap: 10px; }
+  .feat__fig img { width: 100%; max-width: 320px; height: auto; }
+  .news__item { grid-template-columns: 1fr; gap: 2px; }
+  .hero { gap: 24px; }
+  .hero__photo { order: -1; width: 160px; height: 200px; }
+}
+@media print {
+  .top, .foot, .entry__back { display: none; }
+  body { background: #fff; }
+}

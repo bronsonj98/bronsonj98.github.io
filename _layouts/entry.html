@@ -1,0 +1,30 @@
+---
+layout: site
+---
+{% assign kind = page.collection %}
+<article class="entry">
+  <p class="entry__kicker">
+    {% if kind == "publications" %}
+      {% case page.category %}
+        {% when "manuscripts" %}Journal paper
+        {% when "conferences" %}Conference paper
+        {% when "preprints" %}Preprint
+        {% else %}{% if page.publication_status == "under-review" %}Manuscript under review{% else %}Manuscript in preparation{% endif %}
+      {% endcase %}
+    {% else %}{{ page.type }}{% endif %}
+  </p>
+  <h1 class="entry__title">{{ page.title }}</h1>
+  {% if page.authors %}<p class="entry__authors">{{ page.authors | replace: "<u>", "<strong>" | replace: "</u>", "</strong>" }}</p>{% endif %}
+  <p class="entry__meta">{% if page.venue %}<em>{{ page.venue }}</em>{% endif %}{% if page.location %} · {{ page.location }}{% endif %}{% if page.date %}{% if kind == "publications" %}{% unless page.category == "inprep" %}, {{ page.date | date: "%Y" }}{% endunless %}{% else %} · {{ page.date | date: "%B %Y" }}{% endif %}{% endif %}</p>
+  {% assign has_paper = false %}{% if page.paperurl and page.paperurl != "#" %}{% assign has_paper = true %}{% endif %}
+  {% if has_paper or page.codeurl %}
+    <p class="entry__links">{% if page.paperurl and page.paperurl != "#" %}<a class="btn" href="{{ page.paperurl }}">{% if page.category == "preprints" %}Preprint{% else %}Paper{% endif %}</a>{% endif %}{% if page.codeurl %}<a class="btn btn--quiet" href="{{ page.codeurl }}">Code</a>{% endif %}</p>
+  {% endif %}
+  {% if page.note %}<p class="entry__note">{{ page.note }}</p>{% endif %}
+  {% if page.figure %}
+    <figure class="entry__fig"><img src="{{ page.figure | relative_url }}" alt="{{ page.figure_alt }}" width="600" height="400">{% if page.figure_caption %}<figcaption>{{ page.figure_caption }}</figcaption>{% endif %}</figure>
+  {% endif %}
+  {% if page.excerpt and kind == "publications" %}<div class="entry__body">{{ page.excerpt | markdownify }}</div>{% endif %}
+  <div class="entry__body">{{ content }}</div>
+  <p class="entry__back"><a href="{{ '/' | append: kind | append: '/' | relative_url }}">All {{ kind }}</a></p>
+</article>

@@ -7,7 +7,7 @@ date: 2026-11-04
 venue: Manuscript under review
 paperurl: #
 citation: #
-authors: 'Liu\*, Z., Anand\*, A., <u>Jeong, M.</u>, Wang, R., Gorla, A., and Sankararaman, S.'
+authors: "Liu*, Z., Anand*, A., <u>Jeong, M.</u>, Wang, R., Gorla, A., and Sankararaman, S."
 category: inprep
 publication_status: under-review
 note: "*Equal contribution"

@@ -2,7 +2,7 @@
 title: "Describing California’s controlled opioid prescription landscape with the CURES Dataset: descriptive statistics and machine-learning explorations"
 collection: publications
 permalink: /publication/preprint-cures
-excerpt: "A California Department of Justice-approved collaboration analyzing governed CURES data from more than 30 million individuals, approximately 400,000 prescribers, and over 200 million controlled-substance prescriptions; Moonseong Jeong serves as technical lead."
+excerpt: "Descriptive and machine-learning analyses of California's CURES prescription-monitoring data, more than 200 million controlled-substance prescriptions to over 30 million people from about 400,000 prescribers, under a collaboration approved by the California Department of Justice."
 date: 2025-10-01
 venue: Manuscript in preparation
 paperurl: #

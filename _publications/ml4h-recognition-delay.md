@@ -11,4 +11,10 @@ citation: #
 authors: <u>Jeong, M.</u>, Anand, P., Lee, S. A., Han, S., Liu, Z., and Sankararaman, S.
 category: conferences
 note: "Accepted to the ML4H 2026 Proceedings track; to appear December 2026"
+featured: true
+featured_order: 2
+figure: /images/figures/recognition.svg
+figure_alt: "Three curves rising over five years: the share of people with a diagnosis on record reaches 81% for diabetes, 55% for kidney disease, and 31% for anemia."
+figure_caption: "Share of people with a diagnosis on record in the five years after a blood test in the disease range, from the paper."
+summary: "Many people whose blood tests show diabetes, kidney disease, or anemia have no diagnosis on record for years, and case-finding models trained on records inherit the gap."
 ---

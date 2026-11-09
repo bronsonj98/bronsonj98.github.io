@@ -1,40 +1,30 @@
 ---
-layout: archive
-title: "CV"
+layout: page
+title: "Curriculum vitae"
 permalink: /cv/
-description: "Curriculum vitae and research profile for Moonseong (Bronson) Jeong, a UCLA Computer Science PhD candidate working in computational genomics and biomedical machine learning."
-last_modified_at: 2026-11-08
-author_profile: false
+description: "Curriculum vitae of Moonseong (Bronson) Jeong, PhD candidate in Computer Science at UCLA."
+last_modified_at: 2026-11-09
 redirect_from:
   - /resume
 ---
 
-[Download the PDF CV (updated November 2026)](/files/Moonseong_Jeong_CV.pdf){: .btn .btn--primary}
-
-## Research Profile
-
-Moonseong (Bronson) Jeong is a PhD candidate in Computer Science at UCLA advised by Prof. Sriram Sankararaman. His work develops scalable statistical and machine learning methods for computational genomics, biomedical imaging, electronic health records, and biobank-scale genetic discovery, including SUMMIT, a summary-statistics framework for heritability and genetic correlation across genetic ancestries, and studies of how disease is recognized in health records.
+<p><a class="btn" href="{{ '/files/Moonseong_Jeong_CV.pdf' | relative_url }}">Download the PDF (November 2026)</a></p>
 
 ## Education
 
 **University of California, Los Angeles**<br>
-PhD in Computer Science, September 2022–present (expected June 2028)<br>
-Advisor: Prof. Sriram Sankararaman
-
-**University of California, Los Angeles**<br>
-MS in Computer Science, March 2025
-
-**University of California, Los Angeles**<br>
-BS in Mathematics of Computation and BA in Physics, December 2020
+PhD in Computer Science, September 2022 to present, expected June 2028. Advisor: Sriram Sankararaman.<br>
+MS in Computer Science, March 2025.<br>
+BS in Mathematics of Computation and BA in Physics, December 2020.
 
 ## Honors
 
-- Platform (oral) presentation, American Society of Human Genetics (ASHG) 2026 Annual Meeting, Montréal, October 2026
-- ICML 2025 Spotlight selection for RAPTOR (top 2.6% of submissions)
-- UCLA Computer Science Departmental Fellowship, September 2022–present
+- Platform (oral) presentation, American Society of Human Genetics Annual Meeting, Montréal, October 2026
+- Spotlight paper, ICML 2025 (top 2.6% of submissions), for RAPTOR
+- UCLA Computer Science Departmental Fellowship, September 2022 to present
 - UCLA Dean's Honors List, Winter 2019 and Spring 2020
 
-## Selected Presentations
+## Selected presentations
 
 **Oral presentations**
 
@@ -55,21 +45,21 @@ BS in Mathematics of Computation and BA in Physics, December 2020
 
 - "Comprehensive gene heritability estimation reveals the genetic architecture of rare coding variants underlying complex traits," RECOMB-Genetics 2026, Thessaloniki, May 2026 (presented by first author Zhengtong Liu).
 
-See the [Talks](/talks/) page for the full list.
+The [Talks](/talks/) page has the full list.
 
 ## Teaching
 
 Teaching assistant, UCLA Computer Science, since September 2023: C121/C221 Probabilistic Models in Computational Genomics (Fall 2026); CS31 Introduction to Computer Science I (Fall 2025); M146 Introduction to Machine Learning (Winter 2024 and Winter 2025); CM124/224 Machine Learning Applications in Genetics (Fall 2023). Course descriptions are on the [Teaching](/teaching/) page.
 
-## Professional Service
+## Professional service
 
 Ad hoc and invited reviewer for *Cell Genomics*, *Nature Communications*, *Bioinformatics*, *BMC Genomics*, RECOMB 2026, ML4H 2026, and ICLR 2027.
 
-## Technical Expertise
+## Technical expertise
 
-- **Programming and systems:** Python, C++, Bash, SQL, MATLAB, and R; PyTorch and TensorFlow; high-performance computing and Slurm; large-scale experimentation, profiling, and performance optimization.
-- **Research methods:** statistical genetics, variance-component estimation, genome-wide association analysis, gene–environment interaction, biobank-scale computation, machine learning, 3D medical-image analysis, EHR modeling, and secure on-premises health-data pipelines.
+- Programming and systems: Python, C++, Bash, SQL, MATLAB, and R; PyTorch and TensorFlow; high-performance computing and Slurm; large-scale experimentation, profiling, and performance optimization.
+- Research methods: statistical genetics, variance-component estimation, genome-wide association analysis, gene-environment interaction, biobank-scale computation, machine learning, 3D medical-image analysis, EHR modeling, and secure on-premises health-data pipelines.
 
-## Contact and Profiles
+## Contact and profiles
 
 [Email](mailto:bronsonj@cs.ucla.edu) · [Google Scholar](https://scholar.google.com/citations?user=raOG4TkAAAAJ&hl=en) · [ORCID](https://orcid.org/0009-0009-3836-2676) · [DBLP](https://dblp.org/pid/377/0041.html) · [Semantic Scholar](https://www.semanticscholar.org/author/Moonseong-Jeong/2254362634) · [LinkedIn](https://www.linkedin.com/in/bronsonj98) · [GitHub](https://github.com/bronsonj98)

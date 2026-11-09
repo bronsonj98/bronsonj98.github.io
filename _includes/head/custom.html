@@ -11,15 +11,13 @@
 <link rel="icon" href="/images/favicon.ico"/>
 <meta name="theme-color" content="#ffffff"/>
 {% if page.noindex %}<meta name="robots" content="noindex, follow"/>{% endif %}
-<link rel="stylesheet" href="{{ base_path }}/assets/css/academicons.css"/>
-<link rel="stylesheet" href="{{ base_path }}/assets/css/site-redesign.css"/>
 
 {% if page.url == "/" %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "ProfilePage",
-  "dateModified": "2026-11-08T12:00:00-08:00",
+  "dateModified": "2026-11-09T12:00:00-08:00",
   "mainEntity": {
     "@id": {{ site.url | append: site.baseurl | append: "/#person" | jsonify }},
     "@type": "Person",
@@ -89,8 +87,5 @@
 {% endif %}
 
 
-<!-- Support for MatJax -->
-<script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <!-- end custom head snippets -->

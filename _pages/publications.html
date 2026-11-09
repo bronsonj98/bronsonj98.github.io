@@ -1,35 +1,25 @@
 ---
-layout: archive
+layout: page
 title: "Publications"
 permalink: /publications/
-description: "Publications by Moonseong (Bronson) Jeong in computational genomics, statistical genetics, biomedical machine learning, medical imaging, and clinical data science."
-author_profile: false
+description: "Publications by Moonseong (Bronson) Jeong in statistical genetics, biomedical machine learning, medical imaging, and health records."
+intro: "Peer-reviewed papers and public preprints first, then manuscripts under review and in preparation. My name is in bold; * marks equal contribution. Citation record on [Google Scholar](https://scholar.google.com/citations?user=raOG4TkAAAAJ&hl=en)."
 ---
-
-{% if site.author.googlescholar %}
-  <div class="wordwrap">Peer-reviewed papers and public preprints are listed first, followed by manuscripts under review and in preparation. Underlined name marks the author's position; * marks equal contribution. A broader and continuously updated citation record is available on <a href="{{site.author.googlescholar}}">Google Scholar</a>.</div>
-{% endif %}
-
-{% include base_path %}
-
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2 class="pub-category-title">{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
-
+{% for category in site.publication_category %}
+  {% assign items = site.publications | where: "category", category[0] | sort: "date" | reverse %}
+  {% if items.size > 0 %}
+    <section class="sec">
+      <h2>{{ category[1].title }}</h2>
+      {% if category[0] == "inprep" %}<p class="sec-note">Titles and author lists may change before publication.</p>{% endif %}
+      <div class="pubs">
+        {% for post in items %}
+          <article class="pub">
+            <a class="pub__title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            <p class="pub__authors">{{ post.authors | replace: "<u>", "<strong>" | replace: "</u>", "</strong>" }}</p>
+            <p class="pub__venue"><em>{{ post.venue }}</em>{% unless category[0] == "inprep" %}, {{ post.date | date: "%Y" }}{% endunless %}{% if post.paperurl and post.paperurl != "#" %} · <a href="{{ post.paperurl }}">{% if category[0] == "preprints" %}preprint{% else %}paper{% endif %}</a>{% endif %}{% if post.codeurl %} · <a href="{{ post.codeurl }}">code</a>{% endif %}{% if post.note %} · {{ post.note }}{% endif %}</p>
+          </article>
+        {% endfor %}
+      </div>
+    </section>
+  {% endif %}
+{% endfor %}

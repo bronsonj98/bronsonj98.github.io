@@ -1,0 +1,37 @@
+---
+layout: compress
+---
+{% include base_path %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    {% include seo.html %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+    {% include head/custom.html %}
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="top">
+      <nav class="nav" aria-label="Site">
+        <a class="nav__name" href="{{ '/' | relative_url }}">Moonseong Jeong</a>
+        <ul class="nav__links">
+          {% for link in site.data.navigation.main %}
+            <li><a href="{{ link.url | relative_url }}"{% if page.url == link.url or link.collection and page.collection == link.collection %} aria-current="page"{% endif %}>{{ link.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </header>
+    <main id="main" class="main">
+      {{ content }}
+    </main>
+    <footer class="foot">
+      <span>Moonseong Jeong · Department of Computer Science, University of California, Los Angeles</span>
+      <span><a href="mailto:bronsonj@cs.ucla.edu">bronsonj@cs.ucla.edu</a></span>
+    </footer>
+  </body>
+</html>

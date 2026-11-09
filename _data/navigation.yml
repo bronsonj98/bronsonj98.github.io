@@ -1,30 +1,15 @@
-# The following is the order of the links in the header of the website.
-#
-# Changing the order here will adjust the order and you can also add additional
-# links. Removing a link prevents it from showing in the header, but does not
-# prevent it from being included in the site.
-#
-# NOTE that only one of the CV options should be selected, the first is for the
-#      Markdown formatted page while the second is generated using JSON.
-
+# Header links. The site name on the left links home.
 main:
-  - title: "Home"
-    url: /
-
-  - title: "Research"
-    url: /#research
-
   - title: "Publications"
     url: /publications/
-
+    collection: publications
   - title: "Talks"
-    url: /talks/    
-
+    url: /talks/
+    collection: talks
   - title: "Teaching"
-    url: /teaching/    
-
+    url: /teaching/
+    collection: teaching
   - title: "News"
     url: /news/
-
   - title: "CV"
     url: /cv/

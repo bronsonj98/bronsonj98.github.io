@@ -1,10 +1,16 @@
 ---
-layout: archive
-title: "Talks and Presentations"
+layout: page
+title: "Talks and presentations"
 permalink: /talks/
-author_profile: true
+description: "Conference talks and posters by Moonseong (Bronson) Jeong."
+intro: "Oral presentations and posters at conferences, most recent first."
 ---
-
-{% for post in site.talks reversed %}
-  {% include talk-single.html %}
-{% endfor %}
+<div class="pubs">
+  {% assign items = site.talks | sort: "date" | reverse %}
+  {% for post in items %}
+    <article class="pub">
+      <a class="pub__title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <p class="pub__venue">{{ post.type }} · <em>{{ post.venue }}</em>{% if post.location %} · {{ post.location }}{% endif %} · {{ post.date | date: "%B %Y" }}</p>
+    </article>
+  {% endfor %}
+</div>
