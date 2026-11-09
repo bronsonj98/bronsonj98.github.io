@@ -21,7 +21,6 @@ links:
     url: "https://github.com/bronsonj98"
   - title: "CV (PDF)"
     url: "/files/Moonseong_Jeong_CV.pdf"
-research_note: "Four themes, in plain terms."
 themes:
   - title: "Genetic risk from summary data, across ancestries"
     text: "Genome-wide association studies release summary statistics for millions of variants, but rarely the genotypes of individual participants. SUM-RHE (<em>Genome Research</em>, 2024) estimates SNP heritability from summary statistics alone with the accuracy of methods that use individual genotypes. SUMMIT (bioRxiv, 2026) extends this to genetic correlation and to the heritability of genomic annotations, and replaces the local LD scores of earlier methods with genome-wide LD scores. Across 40 traits, the largest gains were in participants of South Asian and admixed African ancestry, for whom standard methods are biased. I presented this work as a platform talk at the 2026 meeting of the American Society of Human Genetics. Current work keeps related and admixed participants in the analysis rather than removing them."

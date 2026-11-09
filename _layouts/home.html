@@ -15,7 +15,7 @@ layout: site
 <section class="block" id="research">
   <div class="block__head">
     <h2>Research</h2>
-    <p class="block__note">{{ page.research_note }}</p>
+    {% if page.research_note %}<p class="block__note">{{ page.research_note }}</p>{% endif %}
   </div>
   <div class="themes">
     {% for t in page.themes %}
