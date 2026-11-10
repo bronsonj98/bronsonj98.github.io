@@ -3,7 +3,7 @@ permalink: /
 layout: home
 title: "Moonseong Jeong"
 description: "Moonseong Jeong, also known as Bronson Jeong, is a PhD candidate in Computer Science at UCLA who develops statistical and machine-learning methods for human genetics, medical imaging, and health records that work when patient data cannot leave an institution and computing is limited."
-last_modified_at: 2026-11-09T12:00:00-08:00
+last_modified_at: 2026-11-10T01:30:00-08:00
 redirect_from:
   - /about/
   - /about.html

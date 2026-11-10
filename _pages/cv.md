@@ -3,7 +3,7 @@ layout: page
 title: "Curriculum vitae"
 permalink: /cv/
 description: "Curriculum vitae of Moonseong (Bronson) Jeong, PhD candidate in Computer Science at UCLA."
-last_modified_at: 2026-11-09
+last_modified_at: 2026-11-10
 redirect_from:
   - /resume
 ---
